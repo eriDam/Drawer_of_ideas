@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">DevManager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Inicio</string>
+
+    <!--Strings lessons-->
+    <!--Programación-->
+    <string name="cpp">C++</string>
+    <string name="qt">Qt</string>
+    <string name="android">Java-Android</string>
+    <string name="js">Javascript</string>
+    <string name="php">PHP</string>
+    <string name="jquery">JQuery</string>
+    <string name="ajax">Ajax</string>
+    <string name="json">JSON</string>
+
+    <!--Bases de datos-->
+    <string name="mysql">MySQL</string>sqlite
+    <string name="sqlite">SQLite</string>
+    <!--Web-->
+    <string name="html">HTML5</string>
+    <string name="css">Css3</string>
+    <string name="dw">Dreaweaver</string>
+
+    <!--Diseño-->
+    <string name="photo">Photoshop</string>
+    <string name="ilust">Illustrator</string>
+
+    <!--Control de versiones-->
+    <string name="git">Git</string>
+
+    <!--Ejemplos-->
+    <string name="ejemplos">
+               Android RecyclerView\n
+               Android Layouts\n
+               Android Fragments
+
+        </string>
+
+    <string name="code">OnCode</string>
+    <string name="loading">Cargando...</string>
+    <string name="Lessons">Lessons</string>
+    <string name="profile">Perfiles</string>
+    <string name="bd">Gestión</string>
+
+    <!--Strings Cards views-->
+    <string name="tarjeta_1">Tarjeta</string>
+    <string name="tarjeta_subt">ver</string>
+    <string name="tarjeta_2">ver</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="cardview_contents">This is a CardView widget. CardView widgets can have
+        shadows and rounded corners.
+        \n\nTo create a card with a shadow, use the <font fgcolor="#FFFFFFFF">android:elevation</font>
+        attribute.
+        \n\nTo set the corner radius in your layouts, use the <font
+            fgcolor="#FFFFFFFF">card_view:cardCornerRadius</font> attribute.
+    </string>
+    <string name="cardview_radius_seekbar_text">Radius</string>
+    <string name="cardview_elevation_seekbar_text">Elevation</string>
+
+
+    <!-- Lista de titulos de navegacion del navDrawer-->
+    <string-array name="nav_options">
+        <item>Inicio</item>
+        <item>Perfiles</item>
+        <item>Lessons</item>
+        <item>Gestión lessons</item>
+        <item>onCode</item>
+        <item>Eventos</item>
+        <item>Blog Roll</item>
+        <item>Configuración</item>
+        <item>Salir</item>
+    </string-array>
+
+    <!--Declaro la Lista de iconos de navegacion
+        Obtengo los iconos de la carpeta drawable-->
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_home</item>
+        <item>@drawable/ic_action_user</item>
+        <item>@drawable/ic_action_star</item>
+        <item>@drawable/ic_action_bdc</item>
+        <item>@drawable/ic_action_git</item>
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_action_labels</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_exit</item>
+    </array>
+
+    <!--Strings Bd-->
+    <string name="selecciona_una_opcion">Selecciona Lesson:</string>
+    <string name="crear">Crear BD y tabla</string>
+    <string name="insertar">Insertar curso</string>
+    <string name="borrar">Borrar curso</string>
+    <string name="buscar">Buscar curso</string>
+    <string name="titulo">Manager BD</string>
+    <string name="editar">Editar curso</string>
+    <string name="salir">Salir menu principal</string>
+
+    <!--Strings onCode-->
+    <string name="introduceB">Introduce búsqueda</string>
+    <string name="perfil">Perfiles</string>
+    <string name="fav">Favoritos</string>
+    <string name="title_activity_lessons2">Lessons</string>
+    <string name="title_activity_prof3">Perfiles</string>
+    <string name="title_activity_on_code4">OnCode</string>
+    <string name="title_activity_gestion5">Gestión</string>
+    <string name="title_activity_blog6">Blog roll</string>
+
+    <!--BD-->
+    <string name="btntext">Activar cámara</string>
+    <string name="urifoto">Archivo</string>
+    <string name="btncam">Ir a cámara</string>
+    <string name="title_activity_reproductor">Reproductor</string>
+    <string name="title_activity_like_">Like Activity</string>
+    <string name="fix_string">Arreglar</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="label_id">Id: </string>
+    <string name="label_nombre_item">Curso</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
+    <string name="hipoteca_crear_item">Añadir Item</string>
+    <string name="btn_imagen">Ver imagen</string>
+    <string name="btn_capturar">Escanear</string>
+    <string name="tVUri">Uri</string>
+    <string name="tV_desc">Descripcion</string>
+    <string name="hipoteca_crear_titulo">Añadir</string>
+    <string name="label_nombre_artista">Cursos</string>
+    <string name="title_activity_gestion5a">Gestión</string>
+    <string name="title_activity_gestion5_b">Gestión</string>
+    <string name="title_activity_dev_test">DevTest</string>
+    <string name="empezar">Empezar el test</string>
+    <string name="title_activity_splash_screen">Cargando Test</string>
+    <string name="title_activity_jugar">Jugar</string>
+    <string name="test">DevTest</string>
+    <string name="inicio">Inicio</string>
+    <string name="devtest">devTest</string>
+    <string name="title_activity_webGoogle">Perfil Google+</string>
+    <string name="title_activity_web_prof_face">Perfil Facebook</string>
+    <string name="title_activity_web_prof_twit">Perfil Twitter</string>
+    <string name="title_activity_web_git">Perfil Git</string>
+    <string name="title_activity_web_lessons">Lessons</string>
+    <string name="title_activity_web_qt">Lessons Qt</string>
+    <string name="title_activity_web_lessons_android">Lessons Android</string>
+    <string name="title_activity_web_lessons_js">Lessons Javascript</string>
+    <string name="title_activity_gestion5_lessons">Gestion5Lessons</string>
+    <string name="label_link">Link:</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.erika_000.devmanager" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".Lessons2Activity"
+            android:label="@string/title_activity_lessons2" >
+        </activity>
+        <activity
+            android:name=".Prof3Activity"
+            android:label="@string/title_activity_prof3" >
+        </activity>
+        <activity
+            android:name=".OnCode4Activity"
+            android:label="@string/title_activity_on_code4" >
+        </activity>
+        <activity
+            android:name=".Gestion5Activity"
+            android:label="@string/title_activity_gestion5" >
+        </activity>
+        <activity
+            android:name=".Blog6Activity"
+            android:label="@string/title_activity_blog6" >
+        </activity>
+        <activity
+            android:name=".DevTest"
+            android:label="@string/title_activity_dev_test" >
+        </activity>
+        <activity
+            android:name=".splash_screen"
+            android:label="@string/title_activity_splash_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jugar"
+            android:label="@string/title_activity_jugar" >
+        </activity>
+        <activity
+            android:name=".WebProfGoogle"
+            android:label="@string/title_activity_webGoogle" >
+        </activity>
+        <activity
+            android:name=".WebGit"
+            android:label="@string/title_activity_web_git" >
+        </activity>
+        <activity
+            android:name=".WebLessonsCpp"
+            android:label="@string/title_activity_web_lessons" >
+        </activity>
+        <activity
+            android:name=".WebLessonsQt"
+            android:label="@string/title_activity_web_qt" >
+        </activity>
+        <activity
+            android:name=".WebLessonsAndroid"
+            android:label="@string/title_activity_web_lessons_android" >
+        </activity>
+        <activity
+            android:name=".WebLessonsJs"
+            android:label="@string/title_activity_web_lessons_js" >
+        </activity>
+        <activity
+            android:name=".Formulario"
+            android:label="@string/title_activity_formulario" >
+        </activity>
+        <activity
+            android:name=".Gestion5Lessons"
+            android:label="@string/title_activity_gestion5_lessons" >
+        </activity>
+    </application>
+
+</manifest>

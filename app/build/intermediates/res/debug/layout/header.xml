@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backgrd"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/im_profile"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/userpic" />
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_profile"
+            android:layout_centerHorizontal="true"
+            android:text="eriDev"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fffdfbff" />
+    </RelativeLayout>
+</FrameLayout>
+<!-- From: file:/C:/Users/erika_000/AndroidStudioProjects/Follow/app/src/main/res/layout/header.xml -->

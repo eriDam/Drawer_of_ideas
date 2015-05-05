@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.erika_000.prefusrs.Cursos">
+    <!-- El TabHost va a quedar pronto deprecated y se sustituira poco a poco por
+         el swipeView-->
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Añadir Cursos"
+                        android:id="@+id/tv_titulo"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cam"
+                        android:onClick="onImgClick"/>
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:id="@+id/imgViewCurso"
+                        android:layout_gravity="center" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etxt_area"
+                        android:layout_alignParentStart="true"
+                        android:hint="Área"
+                        android:layout_marginTop="15dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etxt_nombre"
+                        android:hint="Nombre del curso"
+                        android:layout_below="@+id/etxt_area"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="15dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etxt_link"
+                        android:hint="Link"
+                        android:layout_below="@+id/etxt_nombre"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="15dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etxt_profe"
+                        android:hint="Profesor/Academia"
+                        android:layout_below="@+id/etxt_link"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Añadir"
+                        android:id="@+id/btn_guardar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:onClick="onClick"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Lista de Cursos"
+                        android:id="@+id/tv_titulo_tab2"
+                        android:layout_gravity="center" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <!-- La forma mas fácil de agregar un evento es desde el texto,
+         escribo onclick y me sale para añadirlo en el código-->
+
+</RelativeLayout>

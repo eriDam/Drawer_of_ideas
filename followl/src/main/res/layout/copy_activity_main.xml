@@ -1,0 +1,219 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_grunge_blue"
+     android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="MainActivity" >
+
+        <!-- Es el elemento principal debe llevar el id para hacer referencia despues
+             es 1 Contenedor para una vista de la ventana con pestañas-->
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--
+             Este LinearLayout se va a encargar de distribuir verticalmente las
+              secciones principales de los tabs -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- TabWidget  Es la seccion de   pestañas
+                Muestra una lista de etiquetas de la ficha que representan a cada página en la recolección
+                de la ficha de la matriz.
+                El objeto contenedor de este widget es TabHost . Cuando el usuario selecciona una ficha, este objeto
+                envía un mensaje al contenedor principal, TabHost, a decirle que  cambie  la página mostrada -->
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffdee9f0"
+                    android:onClick="@string/buscar" />
+
+                <!-- FrameLayout Es el contenedor de cada pestaña, contiene cada una y sus contenidos -->
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- Tab1 Incluimos el contenido de cada tab con su propio  Layout -->
+
+                    <RelativeLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:orientation="vertical"
+                            android:id="@+id/layout"
+                            android:layout_height="match_parent"
+                            android:scrollbars="horizontal|vertical"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:scrollbarStyle="outsideInset"
+                            android:fillViewport="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:padding="0dp">
+
+                            <!--<HorizontalScrollView-->
+                            <!--android:id="@+id/horizontalView"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:scrollbars="horizontal|vertical"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_marginTop="5dip">-->
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:stretchColumns="0,1"
+                                android:layout_alignParentStart="true">
+                                <!--TableLayout distribuye los elementos de forma tabular. Se utiliza la etiqueta
+                                   <TableRow> cada vez que queremos insertar una nueva línea .-->
+
+                                <TableRow android:layout_weight="1">
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_cpp"
+                                        android:src="@drawable/ic_cpp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="No me gusta"
+                                        android:padding="5dp"
+                                        android:scaleType="fitStart" />
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_qt"
+                                        android:src="@drawable/ic_qt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Opciones"
+                                        android:padding="5dp"/>
+                                </TableRow>
+
+                                <TableRow android:layout_weight="1">
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_css"
+                                        android:src="@drawable/ic_css_tres"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Opciones"
+                                        android:padding="5dp"/>
+                                    <ImageButton
+                                        android:id="@+id/ibtn_js"
+                                        android:src="@drawable/ic_js"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Salir"
+                                        android:padding="5dp"
+                                        android:focusableInTouchMode="false" />
+
+                                </TableRow>
+                                <TableRow android:layout_weight="1">
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_jquery"
+                                        android:src="@drawable/ic_jquery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Me gusta"
+                                        android:padding="5dp"/>
+                                    <ImageButton
+                                        android:id="@+id/ibtn_ajax"
+                                        android:src="@drawable/ic_ajax"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="No me gusta"
+                                        android:padding="5dp"/>
+                                </TableRow>
+
+                                <TableRow android:layout_weight="1">
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_json"
+                                        android:src="@drawable/ic_json"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Me gusta"
+                                        android:clickable="true"
+                                        android:padding="5dp"/>
+                                    <ImageButton
+                                        android:id="@+id/ibtn_php"
+                                        android:src="@drawable/ic_php"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="No me gusta"
+                                        android:padding="5dp"/>
+
+                                </TableRow>
+                                <TableRow android:layout_weight="1">
+
+                                    <ImageButton
+                                        android:id="@+id/ibtn_html"
+                                        android:src="@drawable/ic_html_five"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Salir"
+                                        android:padding="5dp"/>
+                                    <ImageButton
+                                        android:id="@+id/ibtn_drupal"
+                                        android:src="@drawable/ic_drupal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="Me gusta"
+                                        android:clickable="true"
+                                        android:padding="5dp"/>
+                                </TableRow>
+
+
+                            </TableLayout>
+                            <!--</HorizontalScrollView>-->
+                            <!--</ScrollView>-->
+                        </ScrollView>
+                        <!-- Cerramos el primer LinearLayout tab1 -->
+
+                    </RelativeLayout>
+
+                    <!-- Tab2 Incluimos el contenido de cada tab con su propio linearLayout -->
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textV2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffdee9f0"
+                            android:textSize="30sp"
+                            android:text="Mi tab2"
+                            android:background="@drawable/ic_salir" />
+
+                        <Button
+                            android:id="@+id/btn_abrir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abrir Manager" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>

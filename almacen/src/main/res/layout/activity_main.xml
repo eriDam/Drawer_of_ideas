@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtCursos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cursos Developer"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identificador:"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edIdentificador"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Auto" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Título:" />
+
+        <EditText
+            android:id="@+id/edProducto"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Introduce un título">
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="Sección:" />
+
+        <Spinner
+            android:id="@+id/spinnerSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Total:" />
+
+        <EditText
+            android:id="@+id/edCantidad"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="56dp"
+            android:ems="10"
+            android:hint="Número de temas" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="vista_curso"
+                android:id="@+id/textView_resultado" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/linearLayout1"
+                android:onClick="guardarProducto"
+                android:text="Guardar"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnGuardar"
+                android:layout_below="@+id/btnModificar"
+                android:onClick="buscarProducto"
+                android:text="Buscar"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btnGuardar"
+                android:layout_below="@+id/btnGuardar"
+                android:onClick="borrarProducto"
+                android:text="Eliminar"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btnEliminar"
+                android:layout_below="@+id/btnEliminar"
+                android:onClick="modificarProducto"
+                android:text="Modificar"
+                android:layout_toEndOf="@+id/linearLayout1"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

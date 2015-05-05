@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/balloon_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/Widget.SampleMessageTile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/userpic" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/n"
+            android:layout_centerHorizontal="true"
+            android:text="Sobre el desarrollo:  "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:text="eriDev"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffe62e22"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="Cualquier descripción no sería suficiente.."
+            android:textColor="#ffff142b" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/linearlayout_bg"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnGplus"
+                style="@style/ButtonText"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layers_gplus_button_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Sign in with Google+"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnFb"
+                style="@style/ButtonText"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layers_fb_button_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Sign in with Facebook"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/linearlayout_bg"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <Button
+                android:id="@+id/btnTwitter"
+                style="@style/ButtonText"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layers_twitter_button_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Sign in with Twitter"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnGit"
+                style="@style/ButtonText"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layers_git_button_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Sign in with GitHub"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

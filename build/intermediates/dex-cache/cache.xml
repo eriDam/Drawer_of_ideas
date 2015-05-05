@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-2675c5900d1e0e5cb14016e8cc10be3b11188938.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2b8a750df2a5d485d0c40b379b44371c5e6d98d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-c5aba4d9bbac99098fdfddb2d82df1b2e142b689.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\pre-dexed\debug\classes-c7461c957a71bd1cc64792974da63b8f16dc4c6d.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\classes-56842c1695bb85080189aa14313c906430e64924.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\pre-dexed\debug\classes-79faf373243e64aa2476cdd794174f3cb7825ee1.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\classes-ec7cf472d0f8fa1c7a47cb97c411d884857f64ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\libs\ormlite-android-4.48.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e45246f4a068cad94e03f34bf8f24358279a7f7">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\pre-dexed\debug\ormlite-android-4.48-c1337d31c04aa6b03ac4867acc70ada672f6ffd9.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\classes-69d0c89349d031f517a1ac5bf660e345cc9f260a.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-321f847124469c9813ce490b316d39020e4369bd.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\libs\ormlite-core-4.48.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b3081e1074bf380cc1d09d6ef4f8e5415311f2">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\pre-dexed\debug\ormlite-core-4.48-df463bd9f63e8464abdd6623f27dd52cb394fb19.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-37cc9b965496f95915229b28b84b859512b3d84b.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-f24cc8859956314b10eec666744b82f68216fb1c.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\pre-dexed\debug\classes-af2199286516f447f7eced1c819b485796a78d5a.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\pre-dexed\debug\classes-1d43b822ce067745c73cedfbd04caef255bf4e19.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-37cc9b965496f95915229b28b84b859512b3d84b.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-9ffb0235e7bbf80603f7b0bdb9ba23ead0a1ce37.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\libs\internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\pre-dexed\debug\internal_impl-22.1.0-61c345fd426d660bc3860a044207524f4e9135d1.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\pre-dexed\debug\classes-a9bd8dc206f81cc1fc17199eb0ebddc08785c5ff.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\classes-5767feb26c22bc5411d154d4826ac557376de5fd.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-13a136aebb54dc5ba10a19c26161e3b01278bac8.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\libs\internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\codeon\build\intermediates\pre-dexed\debug\internal_impl-22.1.0-28f48511eb723ac2c40a6c7865a48c649412073b.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-ff7f7f3c4dc6206c23ad453e6341695a2fe95661.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2b8a750df2a5d485d0c40b379b44371c5e6d98d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\pre-dexed\debug\classes-ed7b301eb43c1fb11c8183300ff89002fd5dd874.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-09c2be2882b1b746a3d5b85802240ff6ff6d2295.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-4948072e007f8dd2314e9220bf93884a1be71dcc.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f2b8a750df2a5d485d0c40b379b44371c5e6d98d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\classes-cbf219aa16346be8e7d7b904ead19344047c7452.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\prefusrs\build\intermediates\pre-dexed\debug\classes-8b9c83dffa1fcf679fa27f1b82b2d51b489ed7fb.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.1.0\support-annotations-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\support-annotations-22.1.0-6095855da9cb343824b8344154f7b4e8b6232607.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\app\build\intermediates\pre-dexed\debug\classes-948b3b0d2fd30e0b25753ae05e4d8e541879b99f.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\oncode\build\intermediates\pre-dexed\debug\classes-9476802859ee02d944f1117dbda3011ace0585e4.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\pre-dexed\debug\classes-d9d17f220059e4c079d2c2be0d9a4501336e2f99.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\libs\internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\internal_impl-22.1.0-39f73c2575d1bdf6da0f6861dd75eb07d7a6e17d.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-a914c44cfac8b4f7facd8d87a5afa3fa80f4ebac.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\myapplication\build\intermediates\pre-dexed\debug\classes-c0e7bc54dcce787a3e94f9d2c9ac7e6ae6240af7.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\followl\build\intermediates\pre-dexed\debug\classes-2208d97e068383299a3483268adfae1f06eb87ee.jar" />
+    </item>
+
+</items>

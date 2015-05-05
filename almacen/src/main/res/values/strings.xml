@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cursos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="secciones">
+        <item>Programación</item>
+        <item>Bases de datos</item>
+        <item>Web</item>
+        <item>Diseño</item>
+        <item>Entornos de desarrollo</item>
+        <item>Otros</item>
+
+    </string-array>
+    <string name="title_activity_vista_cursos">VistaCursos</string>
+</resources>

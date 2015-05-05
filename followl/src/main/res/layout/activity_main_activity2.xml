@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:gravity="top|center"
+    android:background="@drawable/bg_pix">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:baselineAligned="false"
+        android:layout_margin="0dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crear"
+            android:id="@+id/btn_crear"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:drawableLeft="@drawable/ic_bd"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insertar"
+            android:id="@+id/btn_insertar"
+            android:layout_below="@+id/btn_crear"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_add"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar"
+            android:id="@+id/btn_buscar"
+            android:layout_below="@+id/btn_eliminar"
+            android:layout_alignLeft="@+id/btn_insertar"
+            android:layout_alignStart="@+id/btn_insertar"
+            android:drawableLeft="@drawable/ic_buscar"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:id="@+id/btn_editar"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_edit"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/borrar"
+            android:id="@+id/btn_eliminar"
+            android:layout_below="@+id/btn_insertar"
+            android:layout_alignRight="@+id/btn_insertar"
+            android:layout_alignEnd="@+id/btn_insertar"
+            android:drawableLeft="@drawable/ic_borrar"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salir"
+            android:id="@+id/btn_salir"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_salir"
+            android:padding="10dp" />
+        <!--Coloco el FloatingActionButton de la librería que he importado
+             https://github.com/futuresimple/android-floating-action-button-->
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/semi_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_plusIconColor="#FFFFFF"
+            fab:fab_colorNormal="#FF0000"
+            fab:fab_colorPressed="#990000"
+            android:layout_gravity="bottom|right"
+            android:baselineAlignBottom="false" />
+    </LinearLayout>
+
+
+
+</ScrollView>

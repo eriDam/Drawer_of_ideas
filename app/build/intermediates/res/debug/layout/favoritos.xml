@@ -1,0 +1,833 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="10dp"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="horizontal|vertical">
+
+    <!--El scroll solo puede tener 1 hijo, este linear contiene todos las demás secciones-->
+    <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!--Titulo programación-->
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#ffededef"
+            android:padding="10dp"
+            android:text="Programación"
+            android:textColor="#ff72b7e3"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--Linear por que el Horizontal scrolView solo puede tener un hijo
+                quiero orientación horizontal para que me muestre el scroll correcto-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Curso 1 C++, cada card contiene 1 fondo, 1 titulo y una opción ver como subtitulo inferior
+                    TO DO: convertir en icono botón para acceder-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardBackgroundColor="@android:color/holo_blue_light"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_cpp_min" />
+                    <!--Titulo curso-->
+                    <TextView
+                        android:id="@+id/txt_cpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/cpp"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subtitulo ver-->
+                    <TextView
+                        android:id="@+id/txt_ver_cpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso 2 Qt, -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_qt_min" />
+                    <!--Titulo curso-->
+                    <TextView
+                        android:id="@+id/tx_qt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/qt"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subtitulo ver-->
+                    <TextView
+                        android:id="@+id/txt_ver_qt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso 3 android-java -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_blue_java_android_min" />
+                    <!--Titulo curso-->
+                    <TextView
+                        android:id="@+id/tx_java"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/android"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_java"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso 4 javascript -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_js_min" />
+                    <!--Título-->
+                    <TextView
+                        android:id="@+id/tx_js"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/js"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_js"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso 5 PHP -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_php_min" />
+                    <!--Título curso-->
+                    <TextView
+                        android:id="@+id/tx_php_w"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/php"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_phpw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso JQuery - AJAX -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_ajax_jquery" />
+                    <!--Título curso-->
+                    <TextView
+                        android:id="@+id/tx_jquery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/jquery"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_jquery_ajax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+                <!--Curso JSON-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_json"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_json_min" />
+
+                    <!--Título curso-->
+                    <TextView
+                        android:id="@+id/tx_json"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/json"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_json"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    <!--Titulo Bases de datos-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffededef"
+            android:padding="10dp"
+            android:text="Bases de datos"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff72b7e3"
+            android:textStyle="bold"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewBd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--Linear por que el Horizontal scrolView solo puede tener un hijo-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--Curso 6 MySQL -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_mysql"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+                    <!--fondo del cardView-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_mysql_min" />
+                    <!--Título curso-->
+                    <TextView
+                        android:id="@+id/tx_mysql"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/mysql"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_mysql"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <!--Curso SQLite-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_sqlite"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    card_view:cardUseCompatPadding="true">
+
+                    <!--Fondo card-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_sqlite_min" />
+
+                    <!--Título curso-->
+                    <TextView
+                        android:id="@+id/tx_sqlite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/sqlite"
+                        android:textColor="#ff72b7e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <!--Subitulo ver curso-->
+                    <TextView
+                        android:id="@+id/tx_ver_sqlite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/tarjeta_subt"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+        <!--Titulo WEB-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textStyle="bold">
+
+            <TextView
+                android:id="@+id/tv_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffededef"
+                android:padding="10dp"
+                android:text="Web"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff72b7e3" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Linear por que el Horizontal scrolView solo puede tener un hijo-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--Curso HTML5-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_html"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+                        <!--Fondo card-->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_html_min" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/tx_html"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/html"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/tx_ver_html"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+                    <!--Curso CSS·-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_css_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardBackgroundColor="@android:color/holo_blue_light"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_css" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/txt_css_w"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/css"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/txt_ver_css_w"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_dw"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_dw_min" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/tx_dw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/dw"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/txt_ver_dw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_php"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_php_min" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/tx_php"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/php"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/tx_ver_php"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!--Titulo diseño-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Título sección-->
+            <TextView
+                android:id="@+id/tv_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffededef"
+                android:padding="10dp"
+                android:text="Diseño"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff72b7e3" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--Linear por que el Horizontal scrolView solo puede tener un hijo-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_ps"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_ps_min" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/tx_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/photo"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/tx_ver_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card8"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardBackgroundColor="@android:color/holo_blue_light"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_ai_min" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/txt_ilust"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="Ilustrator"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/txt_ver_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_css"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardElevation="10dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/im_css" />
+                        <!--Título curso-->
+                        <TextView
+                            android:id="@+id/tx_css"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="#8c000000"
+                            android:padding="10dp"
+                            android:text="@string/css"
+                            android:textColor="#ff72b7e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                        <!--Subitulo ver curso-->
+                        <TextView
+                            android:id="@+id/txt_ver_css"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/tarjeta_subt"
+                            android:textColor="#ffe3e3e3"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+
+                    </android.support.v7.widget.CardView>
+
+               </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<TableLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_alignParentLeft="true"--><!--android:stretchColumns="0,1"--><!--android:layout_alignParentStart="true">--><!--&lt;!&ndash;TableLayout distribuye los elementos de forma tabular. Se utiliza la etiqueta--><!--<TableRow> cada vez que queremos insertar una nueva línea .&ndash;&gt;-->
+
+    <!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_git"--><!--android:src="@drawable/ic_git"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Me gusta"--><!--android:padding="5dp"--><!--android:soundEffectsEnabled="true" />--><!--<ImageButton--><!--android:id="@+id/ibtn_cpp"--><!--android:src="@drawable/ic_cpp"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="No me gusta"--><!--android:padding="5dp" />--><!--</TableRow>--><!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_qt"--><!--android:src="@drawable/ic_qt"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Opciones"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--<ImageButton--><!--android:id="@+id/ibtn_html"--><!--android:src="@drawable/ic_html_five"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Salir"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--</TableRow>--><!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_css"--><!--android:src="@drawable/ic_css_tres"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Opciones"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--<ImageButton--><!--android:id="@+id/ibtn_js"--><!--android:src="@drawable/ic_js"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Salir"--><!--android:padding="5dp"--><!--android:focusableInTouchMode="false" />-->
+
+    <!--</TableRow>--><!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_jquery"--><!--android:src="@drawable/ic_jquery"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Me gusta"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--<ImageButton--><!--android:id="@+id/ibtn_ajax"--><!--android:src="@drawable/ic_ajax"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="No me gusta"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--</TableRow>-->
+
+    <!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_json"--><!--android:src="@drawable/ic_json"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Me gusta"--><!--android:clickable="true"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--<ImageButton--><!--android:id="@+id/ibtn_php"--><!--android:src="@drawable/ic_php"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="No me gusta"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>-->
+
+    <!--</TableRow>--><!--<TableRow android:layout_weight="1">--><!--<ImageButton--><!--android:id="@+id/ibtn_drupal"--><!--android:src="@drawable/ic_drupal"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="Me gusta"--><!--android:clickable="true"--><!--android:padding="5dp"--><!--style="@style/ButtonText"/>--><!--<ImageButton--><!--android:id="@+id/ibtn_dw"--><!--android:src="@drawable/ic_dreaw"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:contentDescription="No me gusta"--><!--android:padding="5dp"--><!--android:alpha="1.5"--><!--style="@style/ButtonText"/>-->
+
+    <!--</TableRow>-->
+
+
+    <!--</TableLayout>--><!---->
+
+
+
+
+<!-- From: file:/C:/Users/erika_000/AndroidStudioProjects/Follow/app/src/main/res/layout/favoritos.xml -->

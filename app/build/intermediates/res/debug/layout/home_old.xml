@@ -1,0 +1,183 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grunge_blue"
+    android:padding="0dp">
+
+
+    <!-- Es el elemento principal debe llevar el id para hacer referencia despues
+                 es 1 Contenedor para una vista de la ventana con pestañas
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        -->
+    <!--
+     Este LinearLayout se va a encargar de distribuir verticalmente las
+      secciones principales de los tabs
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+
+    <!-- TabWidget  Es la seccion de   pestañas
+    Muestra una lista de etiquetas de la ficha que representan a cada página en la recolección
+    de la ficha de la matriz.
+    El objeto contenedor de este widget es TabHost . Cuando el usuario selecciona una ficha, este objeto
+    envía un mensaje al contenedor principal, TabHost, a decirle que  cambie  la página mostrada
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdee9f0"
+        android:onClick="Buscar"/>
+     -->
+    <!-- FrameLayout Es el contenedor de cada pestaña, contiene cada una y sus contenidos
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        -->
+    <!-- Tab1 Incluimos el contenido de cada tab con su propio  Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_width="372dp"
+            android:layout_height="276dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal|vertical">
+
+            <!--<HorizontalScrollView-->
+            <!--android:id="@+id/horizontalView"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scrollbars="horizontal|vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginTop="5dip">-->
+
+            <TableLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:stretchColumns="0,1">
+                <!--TableLayout distribuye los elementos de forma tabular. Se utiliza la etiqueta
+                   <TableRow> cada vez que queremos insertar una nueva línea .-->
+                <!--Linea 1-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_user"
+                        android:padding="5dp"
+                        android:text="@string/profile"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btn_lessons"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:drawableLeft="@drawable/ic_action_star"
+                        android:padding="5dp"
+                        android:text="@string/Lessons"
+                        android:textSize="14dp" />
+
+                </TableRow>
+                <!--Linea 2-->
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_bd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_bdc"
+                        android:padding="5dp"
+                        android:text="@string/bd"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btn_cal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_event"
+                        android:padding="5dp"
+                        android:text="@string/cal"
+                        android:textSize="14dp" />
+                </TableRow>
+            </TableLayout>
+            <!--</HorizontalScrollView>-->
+            <!--</ScrollView>-->
+        </ScrollView>
+
+        <!-- Cerramos el primer  tab1
+
+    </FrameLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_wellcome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wellcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <!-- Tab2 Incluimos el contenido de cada tab con su propio linearLayout
+    <LinearLayout
+        android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffdee9f0"
+            android:textSize="30sp"
+            android:text="Mi tab2" />
+
+        <Button
+            android:id="@+id/btn_abrir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrir Manager" />
+    </LinearLayout>
+</LinearLayout>
+</TabHost>-->
+</FrameLayout><!-- From: file:/C:/Users/erika_000/AndroidStudioProjects/Follow/app/src/main/res/layout/home_old.xml -->

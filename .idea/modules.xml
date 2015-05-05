@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Follow.iml" filepath="$PROJECT_DIR$/Follow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/almacen/almacen.iml" filepath="$PROJECT_DIR$/almacen/almacen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeon/codeon.iml" filepath="$PROJECT_DIR$/codeon/codeon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/devmanager/devmanager.iml" filepath="$PROJECT_DIR$/devmanager/devmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/followl/followl.iml" filepath="$PROJECT_DIR$/followl/followl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oncode/oncode.iml" filepath="$PROJECT_DIR$/oncode/oncode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouchef/ouchef.iml" filepath="$PROJECT_DIR$/ouchef/ouchef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prefusrs/prefusrs.iml" filepath="$PROJECT_DIR$/prefusrs/prefusrs.iml" />
+    </modules>
+  </component>
+</project>

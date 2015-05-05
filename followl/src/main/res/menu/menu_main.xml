@@ -1,0 +1,66 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <!--La action Bar, la podemos definir como el menú, las distintas entradas
+    del actionBar son Acciones normalmente se especifican en el xml pero tambien se
+    puede con código -->
+
+    <!-- El atributo orderInCategory de 1 valor entero indica el orden de cada item,
+     cuanto mas pequeño es el valor, mas a la izquierda sale.
+     -showAsAction es el aributo que nos permite configurar la accion, podemos decir donde
+     queremos esta accion si con icono en la actionBar o con tetxo en el overflow como entrada
+     Tiene distintos valores: always, never, withText, ifRoom es el mas común, se muestra en
+     la actionBar si se puede(normalmenete en horizontal caben ctrl+f11 en avd) -->
+    <item
+        android:id="@+id/menu_git"
+        android:title="@string/git"
+        android:icon="@drawable/ic_action_git"
+        android:orderInCategory="40"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/menu_home"
+        android:title="Buscar"
+        android:icon="@drawable/ic_action_home"
+        android:orderInCategory="30"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_profiles"
+        android:title="Perfiles"
+        android:icon="@drawable/ic_action_user"
+        android:orderInCategory="40"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_lessons"
+        android:title="Lessons"
+        android:icon="@drawable/ic_action_star"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_bd"
+        android:title="Gestión"
+        android:icon="@drawable/ic_action_bdc"
+        android:orderInCategory="60"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_lugares"
+        android:title="Lugares"
+        android:icon="@drawable/ic_action_place"
+        android:orderInCategory="70"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/menu_eventos"
+        android:title="Eventos"
+        android:icon="@drawable/ic_action_event"
+        android:orderInCategory="70"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings"/>
+</menu>

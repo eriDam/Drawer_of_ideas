@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PrefUsrs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_web_prof_google">WebProfGoogle</string>
+    <string name="title_activity_cursos">Cursos</string>
+    <string name="Añadir">guardar</string>
+</resources>

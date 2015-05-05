@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeff1f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_intro_busc"
+            style="@style/Base.Widget.AppCompat.Light.PopupMenu"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="@string/introduceB"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:background="@android:drawable/ic_menu_search"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff4f5ff"
+                android:text="Consultas"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_stackOv"
+                style="@style/ButtonText"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/layers_pers_button_bg"
+                android:text="StackOverflow"
+                android:textColor="#fff8fdfd"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnTwitter"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff4f5ff"
+                android:text="Repositorios"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTwitter"
+                    style="@style/ButtonText"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_git_button_bg"
+                    android:text="Git"
+                    android:textColor="#fff9fbff"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/ButtonText"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btnTwitter"
+                    android:layout_alignStart="@+id/btnTwitter"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_gplus_button_bg"
+                    android:text="CodeGoogle"
+                    android:textColor="#fff9fbff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="131dp"
+        android:layout_height="136dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/today_is_the_day"
+        android:scaleType="centerCrop" />
+
+
+</FrameLayout>
