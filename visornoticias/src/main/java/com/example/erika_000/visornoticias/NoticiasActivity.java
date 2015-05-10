@@ -182,7 +182,7 @@ public class NoticiasActivity extends Activity {
             // Obtiene el fichero xml
             factory = XmlPullParserFactory.newInstance();
             xml = factory.newPullParser();
-            xml.setInput(url.openStream(),"iso-8859-1");
+            xml.setInput(url.openStream(),"UTF-8");
 
             // Obtiene el evento producido por el xml
             evento = xml.getEventType();
@@ -351,7 +351,7 @@ public class NoticiasActivity extends Activity {
         for (int i = 0; i < noticias.size(); i++){
 
             // Almacena el titulos de las noticia
-            tituloNoticias[i] = noticias.get(i).getTitutlo();
+            tituloNoticias[i] = noticias.get(i).getTitulo();
         }
     }
 

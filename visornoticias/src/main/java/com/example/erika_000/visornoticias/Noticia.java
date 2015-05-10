@@ -13,7 +13,7 @@ public class Noticia implements Serializable {
     //												CAMPOS 																   //
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    private String titutlo;				// Almacena el titulo de la noticia
+    private String titulo;				// Almacena el titulo de la noticia
     private String descripcion;			// Almacena la descripción de la noticia
     private String fecha;				// Almacena la fecha de la noticia
     private String link;				// Almacena el link de la noticia
@@ -33,14 +33,14 @@ public class Noticia implements Serializable {
     /**
      * Inicializa una nueva instancia de la clase
      *
-     * @param titutlo Titutlo de la noticia
+     * @param titulo Titutlo de la noticia
      * @param descripcion Descripción de la noticia
      * @param fecha Fecha de la noticia
      * @param link Link de la noticia
      */
-    public Noticia(String titutlo, String descripcion, String fecha, String link) {
+    public Noticia(String titulo, String descripcion, String fecha, String link) {
         super();
-        this.titutlo = titutlo;
+        this.titulo = titulo;
         this.descripcion = descripcion;
         this.fecha = fecha;
         this.link = link;
@@ -62,8 +62,8 @@ public class Noticia implements Serializable {
      *
      * @return Obtiene el titulo de la noticia
      */
-    public String getTitutlo() {
-        return titutlo;
+    public String getTitulo() {
+        return titulo;
     }
 
     /**
@@ -90,7 +90,16 @@ public class Noticia implements Serializable {
         return link;
     }
 
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @Override
+    public String toString() {
+        return "Noticia{" +
+                "tituLo='" + titulo + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", fecha='" + fecha + '\'' +
+                ", link='" + link + '\'' +
+                '}';
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //												FIN PROPIEDADES														   //
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

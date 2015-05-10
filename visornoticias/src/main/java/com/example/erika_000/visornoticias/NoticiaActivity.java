@@ -76,10 +76,10 @@ public class NoticiaActivity extends Activity {
         noticia = (Noticia) intent.getSerializableExtra("NOTICIA");
 
         // Muestra la noticia
-        txtTitulo.setText("Título: "+noticia.getTitutlo());
-        txtDescripcion.setText("Descripción: "+ noticia.getDescripcion());
-        txtFecha.setText("Fecha de la noticia: "+ noticia.getFecha());
-        txtLink.setText("Link: " + noticia.getLink());
+        txtTitulo.setText("Título: "+noticia.getTitulo().toString());
+        txtDescripcion.setText("Descripción: "+ noticia.getDescripcion().toString());
+        txtFecha.setText("Fecha de la noticia: "+ noticia.getFecha().toString());
+        txtLink.setText("Link: " + noticia.getLink().toString());
 
         // FIN EJECUCIÓN /////////////////////////////////////////////////////////////////////////////////////////////////////
     }
