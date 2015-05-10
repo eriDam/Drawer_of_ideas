@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     private CardView card_cpp_h, card_qt_h, card_android_h, card_test;
     private Button
             btn_profile, btn_profile2, btn_profile3,
-            btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog,
+            btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog_roll,
             btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog;
 
     private static final String TAG = "Fragment HOME";
@@ -46,8 +46,8 @@ public class MainActivity extends ActionBarActivity {
         btn_mas_gest    = (Button) findViewById(R.id.label_nombre);
         btn_mas_blog    = (Button) findViewById(R.id.btn_mas_blog);
         btn_mas_oncode  = (Button) findViewById(R.id.btn_mas_oncode);
-        btn_mas_test         =  (Button) findViewById(R.id.btn_mas_test);
-
+        btn_mas_test    = (Button) findViewById(R.id.btn_mas_test);
+        btn_blog_roll   = (Button) findViewById(R.id.btn_blog_roll);
 
     /*Eventos Lessons btn mas*/
         btn_mas_lessons.setOnClickListener(new Button.OnClickListener() {
@@ -210,6 +210,17 @@ public class MainActivity extends ActionBarActivity {
 
 
         btn_mas_blog.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //arrancar la siguiente activity
+                Intent intent = new Intent(MainActivity.this, Blog6Activity.class);
+                startActivity(intent);
+
+            }
+        });
+        //Boton btn_blog_roll
+        btn_blog_roll.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 

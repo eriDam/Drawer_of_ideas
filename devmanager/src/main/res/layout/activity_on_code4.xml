@@ -100,7 +100,7 @@
                         style="@style/ButtonText"
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
-                        android:layout_above="@+id/button"
+                        android:layout_above="@+id/btn_rss_xak"
                         android:layout_alignParentEnd="false"
                         android:layout_alignParentRight="true"
                         android:layout_weight="1"
@@ -110,7 +110,7 @@
                         android:textSize="14dp" />
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/btn_rss_xak"
                         style="@style/ButtonText"
                         android:layout_width="144dp"
                         android:layout_height="wrap_content"

@@ -219,7 +219,7 @@
                         android:layout_height="match_parent"
                         android:scaleType="fitCenter"
                         android:src="@drawable/im_cpp_min"
-                        android:paddingLeft=" 10dp"
+                        android:paddingLeft="10dp"
                         android:paddingTop="30dp"
                         android:paddingRight="10dp"
                         android:paddingBottom="10dp" />
@@ -265,7 +265,7 @@
                         android:layout_height="match_parent"
                         android:scaleType="fitCenter"
                         android:src="@drawable/im_qt_min"
-                        android:paddingLeft=" 10dp"
+                        android:paddingLeft="10dp"
                         android:paddingTop="30dp"
                         android:paddingRight="10dp"
                         android:paddingBottom="10dp" />
@@ -855,7 +855,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_evv6"
+                    android:id="@+id/btn_blog_roll"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:layout_margin="3dp"
@@ -866,157 +866,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!--<TableRow-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_weight="1">-->
-
-        <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:text="@string/lessons"-->
-        <!--android:id="@+id/btn_lesson"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_json"-->
-        <!--android:background="@android:color/holo_blue_light"-->
-        <!--android:padding="10dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:text="@string/lessons"-->
-        <!--android:id="@+id/btn_lesson2"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_ruby"-->
-        <!--android:background="@android:color/holo_blue_light"-->
-        <!--android:padding="10dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:text="@string/lessons"-->
-        <!--android:id="@+id/btn_lesson3"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_seo"-->
-        <!--android:background="@android:color/holo_blue_light"-->
-        <!--android:layout_span="1"-->
-        <!--android:padding="10dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:layout_margin="5dp" />-->
-
-        <!--</TableRow>-->
-
-        <!--<TableRow-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_weight="1">-->
-
-        <!--<Button-->
-        <!--android:layout_width="140dp"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:text="@string/cal"-->
-        <!--android:id="@+id/btn_ev"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_event"-->
-        <!--android:background="#ffffffff"-->
-        <!--android:layout_column="0"-->
-        <!--android:layout_weight="2"-->
-        <!--android:singleLine="false"-->
-        <!--android:textColor="#ff34b5e5"-->
-        <!--android:layout_margin="5dp" />-->
-
-        <!--<LinearLayout-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_column="1"-->
-        <!--android:layout_weight="1">-->
-
-        <!--<Button-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:text="@string/bd"-->
-        <!--android:id="@+id/btn_bd"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_bdc"-->
-        <!--android:background="#ffd7d7d7"-->
-        <!--android:layout_column="1"-->
-        <!--android:layout_gravity="right"-->
-        <!--android:textColor="@android:color/holo_blue_light"-->
-        <!--android:layout_margin="5dp" />-->
-
-        <!--<Button-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:text="@string/bd"-->
-        <!--android:id="@+id/btn_bd2"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_bdc"-->
-        <!--android:background="#ffffad23"-->
-        <!--android:layout_column="1"-->
-        <!--android:layout_gravity="right"-->
-        <!--android:textColor="@android:color/holo_blue_light"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--</LinearLayout>-->
-
-        <!--</TableRow>-->
-
-        <!--<TableRow-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_weight="2">-->
-        <!--<Button-->
-        <!--android:layout_width="240dp"-->
-        <!--android:layout_height="200dp"-->
-        <!--android:text="@string/cal"-->
-        <!--android:id="@+id/btn_cal"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_event"-->
-        <!--android:background="@android:color/holo_blue_light"-->
-        <!--android:layout_column="0"-->
-        <!--android:layout_span="3"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--</TableRow>-->
-
-        <!--<TableRow-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_weight="2">-->
-        <!--<Button-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"-->
-        <!--android:text="@string/cal"-->
-        <!--android:id="@+id/btn_cal2"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_event"-->
-        <!--android:background="#ffffffff"-->
-        <!--android:layout_column="0"-->
-        <!--android:layout_span="3"-->
-        <!--android:textColor="@android:color/holo_blue_light"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--</TableRow>-->
-        <!--<TableRow-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_weight="2">-->
-        <!--<Button-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"-->
-        <!--android:text="@string/cal"-->
-        <!--android:id="@+id/btn_cal4"-->
-        <!--android:textSize="20dp"-->
-        <!--android:drawableLeft="@drawable/ic_action_event"-->
-        <!--android:background="#ffffad23"-->
-        <!--android:layout_column="0"-->
-        <!--android:layout_span="3"-->
-        <!--android:textColor="@android:color/holo_blue_light"-->
-        <!--android:layout_margin="5dp" />-->
-        <!--</TableRow>-->
-
-
-        <!--</TableLayout>-->
 
     </LinearLayout>
 

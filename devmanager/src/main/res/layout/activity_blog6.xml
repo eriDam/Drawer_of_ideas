@@ -1,49 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<ScrollView
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_dpgris">
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView2"
-        android:background="@drawable/blog_roll"
-        android:scaleType="centerCrop"/>
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-
+        android:layout_width="match_parent"
+        android:layout_height="617dp"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_bg">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Tab lessons"
-            android:id="@+id/tv_lessons"
-            android:layout_gravity="center_horizontal"
+            android:text="Blog Roll"
+            android:id="@+id/tv_blog"
             android:autoText="false"
-            android:textColor="#ff2585ff" />
+            android:textColor="#ff2585ff"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Abrir Lista"
-            android:id="@+id/button"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center" />
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_rss_xak"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_rss_min"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:id="@+id/btn_feedly"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_feedly"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:id="@+id/btn_blog_android"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_android_dev"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blog_qt"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_qt_"
+                android:layout_weight="1"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:id="@+id/btn_blog_androide_libre"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_andoide_libre"
+                android:layout_margin="5dp"
+                android:layout_weight="0.54" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:id="@+id/btn_blog_eridam"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_blog_eri"
+                android:layout_margin="5dp"
+                android:layout_weight="0.54" />
 
         </LinearLayout>
 
     </LinearLayout>
 
 
-</FrameLayout>
+</ScrollView>
