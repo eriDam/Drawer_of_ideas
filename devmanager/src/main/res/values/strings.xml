@@ -146,4 +146,6 @@
     <string name="title_activity_web_lessons_js">Lessons Javascript</string>
     <string name="title_activity_gestion5_lessons">Gestion5Lessons</string>
     <string name="label_link">Link:</string>
+    <string name="title_activity_noticia">Noticia</string>
+    <string name="title_activity_noticias">Noticias</string>
 </resources>

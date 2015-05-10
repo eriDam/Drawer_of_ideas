@@ -14,24 +14,27 @@ import android.widget.Toast;
 
 
 public class OnCode4Activity extends ActionBarActivity {
-    Button btn_buscar, btn_stackOv,btn_git;
+    Button btn_buscar, btn_stackOv, btn_git, btn_iteramos;
     EditText et_intro_busc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_code4);
-        btn_buscar    = (Button)findViewById(R.id.btn_buscar);
-        btn_stackOv   = (Button)findViewById(R.id.btn_stackOv);
-        et_intro_busc = (EditText)findViewById(R.id.et_intro_busc);
+        btn_buscar     = (Button)findViewById(R.id.btn_buscar);
+        btn_stackOv    = (Button)findViewById(R.id.btn_stackOv);
+        et_intro_busc  = (EditText)findViewById(R.id.et_intro_busc);
         btn_git        = (Button)findViewById(R.id.btnTwitter);
-        //Campo de texto
-        et_intro_busc.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //borramos el texto del editTex cuando sea pulsado para escribir
-                et_intro_busc.setText("");
-            }
-        });
+        btn_iteramos   = (Button)findViewById(R.id.btn_iteramos);
+
+        //Campo de texto, ya no es necesario borrarlo pues le he puesto el texto en hint, cuando no haya nada mostrara la
+        //cadena, cuando se pulse desaparece
+//        et_intro_busc.setOnClickListener(new Button.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //borramos el texto del editTex cuando sea pulsado para escribir
+//                et_intro_busc.setText("");
+//            }
+//        });
 
         //Botón buscar
         btn_buscar.setOnClickListener(new Button.OnClickListener() {
@@ -83,6 +86,17 @@ public class OnCode4Activity extends ActionBarActivity {
                 Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://stackoverflow.com/"));
 
                 startActivity(intento);
+
+            }
+
+        });
+        btn_iteramos.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoIteramos = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.iteramos.com/"));
+
+                startActivity(intentoIteramos);
 
             }
 

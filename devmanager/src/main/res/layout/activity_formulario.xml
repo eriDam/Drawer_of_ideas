@@ -2,45 +2,56 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.erika_000.devmanager.Formulario" >
+        tools:context="com.example.erika_000.devmanager.Formulario"
+    android:background="@drawable/bg_dpgris">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp" >
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/linearlayout_bg">
 
             <TextView
                 android:id="@+id/label_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_id"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fffbfcfe" />
             <TextView
                 android:id="@+id/label_nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_nombre_artista"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fffbfcfe" />
 
             <EditText
                 android:id="@+id/nombre"
                 android:layout_width="346dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/label_nombre" />
+                android:layout_below="@+id/label_nombre"
+                android:textColor="#ff4676bc" />
             <TextView
                 android:id="@+id/label_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_link"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fffbfcfe" />
             <EditText
                 android:id="@+id/link"
                 android:layout_width="346dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/label_link" />
+                android:layout_below="@+id/label_link"
+                android:textColor="#ff4676bc" />
 
             <LinearLayout
                 android:id="@+id/botonera"
@@ -54,13 +65,17 @@
                     android:id="@+id/boton_cancelar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cancelar" />
+                    android:text="@string/cancelar"
+                    android:layout_marginBottom="250dp"
+                    android:layout_marginTop="100dp" />
 
                 <Button
                     android:id="@+id/boton_guardar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/guardar" />
+                    android:text="@string/guardar"
+                    android:layout_marginBottom="250dp"
+                    android:layout_marginTop="100dp" />
 
             </LinearLayout>
 

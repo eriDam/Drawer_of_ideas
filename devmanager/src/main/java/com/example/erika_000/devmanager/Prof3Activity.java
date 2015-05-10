@@ -13,28 +13,29 @@ import android.widget.Toast;
 
 public class Prof3Activity extends ActionBarActivity {
     //Botones
-    private Button btnGplus, btnFb, btnTwitter, btnGit;
+    private Button btnGplus, btnFb, btn_twiter, btnGit, btn_youtube;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof3);
 
-        btnGplus = (Button) findViewById(R.id.btnGplus);
-        btnTwitter = (Button) findViewById(R.id.btnTwitter);
-        btnFb = (Button) findViewById(R.id.btnFb);
-        btnGit = (Button) findViewById(R.id.btnGit);
+        btnGplus    = (Button) findViewById(R.id.btnGplus);
+        btn_twiter  = (Button) findViewById(R.id.btn_twiter);
+        btnFb       = (Button) findViewById(R.id.btnFb);
+        btnGit      = (Button) findViewById(R.id.btnGit2);
+        btn_youtube = (Button) findViewById(R.id.btn_youtube);
         //Botón btnGplus
         btnGplus.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abreGoogle = new Intent(Prof3Activity.this,WebProfGoogle.class);
+                Intent abreGoogle = new Intent(Prof3Activity.this, WebProfGoogle.class);
                 startActivity(abreGoogle);
 
             }
         });
 
         //Botón btnTwitter
-        btnTwitter.setOnClickListener(new Button.OnClickListener() {
+        btn_twiter.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com"));
@@ -65,8 +66,18 @@ public class Prof3Activity extends ActionBarActivity {
                 startActivity(abreGoogle);
             }
         });
+        //Botón btn_youtube, abre mi canal de youtube
+        btn_youtube.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //abro navegador
+                Intent intentoY = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCnx8IvRaWinWN9I6VrBdFDQ"));
+                startActivity(intentoY);
+            }
+        });
 
     }
+
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
             // Inflate the menu; this adds items to the action bar if it is present.

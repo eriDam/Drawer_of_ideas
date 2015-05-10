@@ -8,13 +8,15 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView4"
-        android:background="@drawable/bg_oncode_v"
+        android:background="@drawable/devmanager_concept"
         android:scaleType="centerCrop"
         android:contentDescription="bg_onCode" />
+
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="577dp">
+        android:layout_height="196dp"
+        android:layout_gravity="center">
 
         <ProgressBar
             style="?android:attr/progressBarStyleLarge"
@@ -23,19 +25,21 @@
             android:id="@+id/spinner"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="81dp"
             android:indeterminate="false"
-            android:layout_gravity="center_horizontal|top" />
+            android:progress="@android:integer/config_mediumAnimTime"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/loading"
-            android:layout_gravity="center_horizontal"
             android:id="@+id/textLoad"
-            android:textSize="@dimen/abc_action_bar_progress_bar_size"
+            android:textSize="28dp"
             android:layout_below="@+id/spinner"
-            android:textColor="#fffff9fc" />
+            android:textColor="#ff8c9092"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp" />
     </LinearLayout>
 
 </FrameLayout>

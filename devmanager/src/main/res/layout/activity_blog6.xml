@@ -11,7 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="617dp"
         android:orientation="vertical"
-        android:background="@drawable/linearlayout_bg">
+        android:background="@drawable/linearlayout_bg"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -38,18 +42,22 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_rss_xak"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_rss_min"
-                android:layout_weight="1"
-                android:layout_margin="5dp" />
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_rss_min" />
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_feedly"
-                android:layout_gravity="center"
                 android:background="@drawable/ic_feedly"
-                android:layout_weight="1"
-                android:layout_margin="5dp" />
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
 
         </LinearLayout>
 
@@ -59,13 +67,15 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_blog_android"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_android_dev"
-                android:layout_weight="1"
-                android:layout_margin="5dp" />
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -73,8 +83,10 @@
                 android:id="@+id/btn_blog_qt"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_qt_"
-                android:layout_weight="1"
-                android:layout_margin="5dp" />
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
 
         </LinearLayout>
 
@@ -84,22 +96,82 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_blog_androide_libre"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_andoide_libre"
-                android:layout_margin="5dp"
-                android:layout_weight="0.54" />
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/btn_blog_eridam"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_blog_eri"
-                android:layout_margin="5dp"
-                android:layout_weight="0.54" />
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blog_minidosis"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_minidosis"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blog_sgoliver"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_sgoliver"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blog_codalonso"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_codalonso"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blog_geeky"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_geeky"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp" />
 
         </LinearLayout>
 

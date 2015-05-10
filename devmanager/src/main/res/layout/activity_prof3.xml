@@ -51,86 +51,120 @@
             android:textColor="#ffff142b" />
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/linearLayout3"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:background="@drawable/linearlayout_bg"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <Button
-                android:id="@+id/btnGplus"
-                style="@style/ButtonText"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/layers_gplus_button_bg"
-                android:paddingBottom="10dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="Sign in with Google+"
-                android:textSize="12dp" />
-
-            <Button
-                android:id="@+id/btnFb"
-                style="@style/ButtonText"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/layers_fb_button_bg"
-                android:paddingBottom="10dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="Sign in with Facebook"
-                android:textSize="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/linearlayout_bg"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_alignParentStart="true">
 
-
-            <Button
-                android:id="@+id/btnTwitter"
-                style="@style/ButtonText"
-                android:layout_width="210dp"
+            <LinearLayout
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/layers_twitter_button_bg"
-                android:paddingBottom="10dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="Sign in with Twitter"
-                android:textSize="12dp" />
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/linearLayout3"
+                android:layout_above="@+id/linearLayout5"
+                android:layout_alignParentStart="true">
 
-            <Button
-                android:id="@+id/btnGit"
-                style="@style/ButtonText"
-                android:layout_width="210dp"
+                <Button
+                    android:id="@+id/btnGplus"
+                    style="@style/ButtonText"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_gplus_button_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sign in with Google+"
+                    android:textSize="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:id="@+id/btnFb"
+                    style="@style/ButtonText"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_fb_button_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sign in with Facebook"
+                    android:textSize="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/layers_pers_button_bg"
-                android:paddingBottom="10dp"
-                android:paddingLeft="30dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:text="Sign in with GitHub"
-                android:textSize="12dp" />
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_above="@+id/linearLayout44"
+                android:layout_alignParentStart="true">
+
+
+                <Button
+                    android:id="@+id/btn_twiter"
+                    style="@style/ButtonText"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_twitter_button_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sign in with Twitter"
+                    android:textSize="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:id="@+id/btnGit2"
+                    style="@style/ButtonText"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layers_pers2_button_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sign in with GitHub"
+                    android:textSize="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp">
+
+
+                <Button
+                    android:id="@+id/btn_youtube"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layers_gplus_button_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Sign in with Youtube"
+                    android:textSize="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
 

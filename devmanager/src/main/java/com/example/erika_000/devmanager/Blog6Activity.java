@@ -14,7 +14,8 @@ import android.widget.Toast;
 public class Blog6Activity extends ActionBarActivity {
 
     //Controles
-    private Button btn_rss_xak, btn_blog_qt, btn_blog_eridam, btn_blog_android, btn_feedly, btn_blog_androide_libre;
+    private Button btn_rss_xak, btn_blog_qt, btn_blog_eridam, btn_blog_android, btn_feedly, btn_blog_androide_libre,
+            btn_blog_geeky, btn_blog_minidosis, btn_blog_codalonso, btn_blog_sgoliver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,10 @@ public class Blog6Activity extends ActionBarActivity {
         btn_blog_qt             = (Button)findViewById(R.id.btn_blog_qt);
         btn_blog_androide_libre = (Button)findViewById(R.id.btn_blog_androide_libre);
         btn_blog_eridam         = (Button)findViewById(R.id.btn_blog_eridam);
+        btn_blog_geeky          = (Button)findViewById(R.id.btn_blog_geeky);
+        btn_blog_minidosis      = (Button)findViewById(R.id.btn_blog_minidosis);
+        btn_blog_codalonso      = (Button)findViewById(R.id.btn_blog_codalonso);
+        btn_blog_sgoliver       = (Button)findViewById(R.id.btn_blog_sgoliver);
 
 
 
@@ -85,7 +90,43 @@ public class Blog6Activity extends ActionBarActivity {
             }
 
         });
+        btn_blog_geeky.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intentoBlog = new Intent(Intent.ACTION_VIEW, Uri.parse("https://geekytheory.com/"));
+                startActivity(intentoBlog);
+            }
+
+        });
+        btn_blog_minidosis.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoBlog = new Intent(Intent.ACTION_VIEW, Uri.parse("https://geekytheory.com/"));
+                startActivity(intentoBlog);
+            }
+
+        });
+
+        btn_blog_codalonso.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoBlog = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.codigoalonso.com/2013/10/Introduccion-SQLite-Android.html"));
+                startActivity(intentoBlog);
+            }
+
+        });
+        btn_blog_sgoliver.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoBlog = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.sgoliver.net/blog/"));
+                startActivity(intentoBlog);
+            }
+
+        });
 
     }
 
