@@ -20,7 +20,9 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
     //Hacemos la instancia una variable de clase / global
     EPreguntas p = null;
     DPreguntas objPreguntas = null;
-
+    TextView tv_puntuacion;
+    //contador puntuacion
+    int puntuacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +93,10 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
             //Llamamos a la var objPreguntas la actualizamos y le pasamos la var p
             p.setEstado(1);
             objPreguntas.actualizarPreguntas(p);
+            puntuacion += 1;
+            tv_puntuacion = (TextView) findViewById(R.id.tv_puntuacion);
+            tv_puntuacion.setText(" "+puntuacion);
+
             //generamos un aleatorio y asi ya no mostrará la pregunta si se ha acertado
             generarPreguntas();
 

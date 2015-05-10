@@ -44,7 +44,7 @@ public class DataBaseMan extends SQLiteOpenHelper {
         this.mContext = context;
     }
 
-    //Creación de la base de datos
+    //Creacion de la base de datos
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Creamos la base de datos
@@ -66,7 +66,7 @@ public class DataBaseMan extends SQLiteOpenHelper {
         Log.i(this.getClass().toString(), "Datos insertados");
     }
 
-    //Actualización de la base de datos
+    //Actualizacion de la base de datos
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // N/A

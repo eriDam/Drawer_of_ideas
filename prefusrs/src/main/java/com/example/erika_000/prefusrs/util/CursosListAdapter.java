@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.erika_000.prefusrs.R;
@@ -57,5 +58,7 @@ public class CursosListAdapter extends ArrayAdapter{
         TextView textViewP = (TextView) view.findViewById(R.id.view_profe);
         //inicializo su valor
         textViewL.setText(actual.getProfe());
+        //Aunque el metodo se llame inicializarCamposDeTexto, inicializo aqui la immg
+        ImageView ivCursoImage = (ImageView)view.findViewById(R.id.ivCursoImage);
     }
 }

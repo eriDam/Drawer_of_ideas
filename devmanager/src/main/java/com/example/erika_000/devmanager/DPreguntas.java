@@ -119,10 +119,10 @@ public class DPreguntas extends SQLiteOpenHelper{
         // que necesita, el nombre de la tabla(lo obtengo con la clase EPreguntas)
         // el array y el resto (order by, having...ctrl+p me saca el constructor para ver). Se la asigno al objeto cursor.
 
-        // después del array columnas voy a COMPARAR con el campo estado, despues solicIta un selection, el signo de ? se cambiará por este valor,
+        // después del array columnas voy a COMPARAR con el campo estado, despues solicita un selection, el signo de ? se cambiará por este valor,
         //Nos va a devolver todos los valores de la tabla donde la condición sea según lo que le pasemos por param (valor)
         // Recorrer el arrayList:
-        //    Creo objeto de la clase Cursor, necesario para ello
+        //Creo objeto de la clase Cursor, necesario para ello
 
         Cursor cursor = db.query(EPreguntas.TABLE_NAME, columnas,EPreguntas.FIELD_ESTADO + "=?",new String[] {valor},null,null,null );
         //Iteramos con el cursor para acceder a los elementos que devuelve el cursor y para insertarlos
@@ -156,6 +156,8 @@ public class DPreguntas extends SQLiteOpenHelper{
     {
         //Actualizamos según el Id, como es un entero, le hacemos el cambio a String con ValueOf
         db.update(EPreguntas.TABLE_NAME,generarValores(preguntas),EPreguntas.FIELD_ID + "=?", new String [] {String.valueOf(preguntas.getId())});
+
+
     }
 
 

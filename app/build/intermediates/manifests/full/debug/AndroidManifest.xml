@@ -32,20 +32,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cipolat.slidenavigation.BdFragment"
-            android:label="@string/title_activity_bd_fragment" >
-        </activity>
-        <activity
-            android:name="com.cipolat.slidenavigation.oncodeFragment"
-            android:label="@string/title_activity_lugares_fragment" >
-        </activity>
-        <activity
             android:name="com.cipolat.slidenavigation.ActivityBd"
             android:label="@string/title_activity_activity_bd" >
-        </activity>
-        <activity
-            android:name="com.cipolat.slidenavigation.Gestion5BActivity"
-            android:label="@string/title_activity_gestion5_b" >
         </activity>
     </application>
 

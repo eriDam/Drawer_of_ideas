@@ -130,9 +130,9 @@ public class Formulario extends Activity {
         if (modo == mDbHelper.C_CREAR)
         {
             mDbHelper.insert(reg);
-            Toast.makeText(Formulario.this, "Artista creado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Formulario.this, "Curso creado", Toast.LENGTH_SHORT).show();
         }   else if (modo == mDbHelper.C_EDITAR){
-            Toast.makeText(Formulario.this, "Artista modificado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Formulario.this, "Curso modificado", Toast.LENGTH_SHORT).show();
             mDbHelper.update(reg);
         }
 

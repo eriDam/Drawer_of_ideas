@@ -69,7 +69,7 @@ public class splash_screen extends ActionBarActivity {
         ArrayList<EPreguntas> preguntas = new ArrayList<EPreguntas>(Arrays.<EPreguntas>asList(
                 //Paso las pregunta las respuestas y por ultimo la respuesta correcta
                 new EPreguntas("¿Cual es tu lenguaje preferido?","Android-Java","C++","Qt","Javascript","Android-Java"),
-                new EPreguntas("¿Que tipos de Layouts conoces?","RelativeLayout, LinnearLayout, ScrollLayout, FrameLayout, ListLayout","0","Solo RelativeLayout y LinearLayout","ScrollLayout no existe","RelativeLayout, LinnearLayout, ScrollLayout, FrameLayout, ListLayout"),
+                new EPreguntas("¿Que tipos de Layouts conoces?","RelativeLayout, LinearLayout, FrameLayout, ListLayout, TableLayout, GridLayout","0","Solo RelativeLayout y LinearLayout","RelativeLayout, LinearLayout, FrameLayout","RelativeLayout, LinearLayout, FrameLayout, ListLayout, TableLayout, GridLayout"),
                 new EPreguntas("¿Que sentencia SQL es para ordenar?","Having","Short","Order","Select","Order"),
                 new EPreguntas("¿Que es un puntero?","Una variable","Una variable con espacio","Los punteros son variables, pero en vez de contener un valor especifico, contienen las direcciones de las variables a las que apuntan","Se utilizan en SQL","Los punteros son variables, pero en vez de contener un valor especifico, contienen las direcciones de las variables a las que apuntan"),
                 new EPreguntas("En SQL, ¿Cual de estas sentencias añade una fila a una tabla en una base de datos?","ADD","INSERT","UPDATE","INCLUDE","INSERT"),
@@ -79,12 +79,14 @@ public class splash_screen extends ActionBarActivity {
                 new EPreguntas("¿Qué características son propias de la programación orientada a objetos?","La modularidad, el principio de ocultación y la reutilización","La abstracción, el anidamiento y la parametrización "," El encapsulamiento, la herencia y el polimorfismo","Las anteriores respuestas no son correctas "," El encapsulamiento, la herencia y el polimorfismo"),
                 new EPreguntas("Int, char, float, string y boolean son","Funciones de acceso a datos ","Instrucciones de acceso a datos "," Sentencias de control","Tipos de datos","Tipos de datos"),
                 new EPreguntas("¿Tu app favorita?","Ninguna","Esta","CodeOn","MusicApp","Esta"),
-                new EPreguntas("Operadores a tener en cuenta cuando trabajamos con punteros.","Ninguno","El operador de dirección (&) que devuelve la dirección de memoria de su operando y el operador de indirección (*) que devuelve un alias para el objeto al cual apunta el operando del puntero.","Ooperador de dirección (&)","Operador de indirección (*) ","El operador de dirección (&) que devuelve la dirección de memoria de su operando y el operador de indirección (*) que devuelve un alias para el objeto al cual apunta el operando del puntero."),
+                new EPreguntas("Operadores a tener en cuenta cuando trabajamos con punteros.","Ninguno","El operador de dirección (&) que devuelve la dirección de memoria de su operando y el operador de indirección (*) que devuelve un alias para el objeto al cual apunta el operando del puntero.","Operador de dirección (&)","Operador de indirección (*) ","El operador de dirección (&) que devuelve la dirección de memoria de su operando y el operador de indirección (*) que devuelve un alias para el objeto al cual apunta el operando del puntero."),
                 new EPreguntas("¿Tu app favorita?","Ninguna","Esta","CodeOn","MusicApp","Esta"),
                 new EPreguntas("El Padding es","El margen","El borde","El grosor del borde","Un margen que se aplica internamente al control, al establecerlo se crea una zona de relleno con el ancho indicado en esta propiedad.","Un margen que se aplica internamente al control, al establecerlo se crea una zona de relleno con el ancho indicado en esta propiedad."),
-                new EPreguntas("En el siguiente ejemplo: int X = 15;\n" +
+                new EPreguntas("En el siguiente ejemplo:\n" +
+                        "int X = 15;\n" +
                         "int *ptrX;\n" +
-                        "ptrX = &X; Vemos como se inicializa una variable X con el valor 15. Luego...","...se apunta a ptrX","Se apunta a la direccion de X","Ninguna de las anteriores","se crea un puntero a int y por último el puntero pasa a apuntar a la variable X. Esto es, ptrX es un puntero a X.","se crea un puntero a int y por último el puntero pasa a apuntar a la variable X. Esto es, ptrX es un puntero a X.")
+                        "ptrX = &X;\n" +
+                        "Vemos como se inicializa una variable X con el valor 15. Luego...","...se apunta a ptrX","Se apunta a la direccion de X","Ninguna de las anteriores","se crea un puntero a int y por último el puntero pasa a apuntar a la variable X. Esto es, ptrX es un puntero a X.","se crea un puntero a int y por último el puntero pasa a apuntar a la variable X. Esto es, ptrX es un puntero a X.")
         ));
 
         //Se va a ejecutar antes d que se inicie un hilo, el asyncTask es un hilo
@@ -92,9 +94,10 @@ public class splash_screen extends ActionBarActivity {
         protected void onPreExecute() {
        // super.onPreExecute();
         dialog = new ProgressDialog(splash_screen.this);
-        dialog.setTitle("Cargando Preguntas");
-        dialog.setMessage("A continuación saldrá cada pregunta\n" +
-                " con cuatro opciones para elegir como respuesta");
+        dialog.setTitle("Mezclando Preguntas");
+        dialog.setMessage("A continuación tendrás cada pregunta\n" +
+                "          con 4 opciones para elegir como respuesta." +
+                "          Disfruta y aprende futur@ Dev  :) ");
         dialog.show();//Para mostrar
        }
 

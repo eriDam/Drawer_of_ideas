@@ -43,7 +43,7 @@ public class Gestion5Lessons extends ListActivity {
                 0);
         setListAdapter(mAdapter);
 
-        //Añadimos el listener del boton
+        //Anyadimos el listener del boton
         final Button boton=(Button) findViewById(R.id.addBtn);
         boton.setOnClickListener(new Button.OnClickListener(){
                                      @Override
@@ -102,8 +102,7 @@ public class Gestion5Lessons extends ListActivity {
     // Close database
     @Override
     protected void onDestroy() {
-
-        mDbHelper.deleteDatabase();
+     //mDbHelper.deleteDatabase();
         super.onDestroy();
 
     }
@@ -113,7 +112,7 @@ public class Gestion5Lessons extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id)
     {
         super.onListItemClick(l, v, position, id);
-        // Llamamos a la Actividad Formulario indicando el modo visualización y el identificador del registro
+        // Llamamos a la Actividad Formulario indicando el modo visualizacion y el identificador del registro
         Intent i = new Intent(Gestion5Lessons.this, Formulario.class);
         i.putExtra(C_MODO, C_VISUALIZAR);
         i.putExtra(mDbHelper.ID, id);
@@ -121,12 +120,12 @@ public class Gestion5Lessons extends ListActivity {
         startActivityForResult(i, C_VISUALIZAR);
     }
 
-    //CApturamos la respuesta a la creación de registro
+    //CApturamos la respuesta a la creacion de registro
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         //
-        // Nos aseguramos que es la petición que hemos realizado
+        // Nos aseguramos que es la peticion que hemos realizado
         //
         switch(requestCode)
         {

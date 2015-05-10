@@ -1,6 +1,7 @@
 package com.example.erika_000.prefusrs;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -44,6 +45,7 @@ public class Cursos extends ActionBarActivity {
     private ListView cursosListview;
     private ImageView imgViewCurso;
     private Button btn_guardar;
+    //private Uri imageUri;
     //A veces van a llegar varias notificaciones , hay que saber cual estams esperando
     private int request_code = 1;
 
@@ -179,7 +181,8 @@ public class Cursos extends ActionBarActivity {
                 txt_area.getText().toString(),
                 txt_nombre.getText().toString(),
                 txt_link.getText().toString(),
-                txt_profe.getText().toString()
+                txt_profe.getText().toString(),
+                (Uri) imgViewCurso.getTag()
         );
 
         //Hago uso del format para evitar concatenar con el mas, eso supone carga para el equipo
@@ -199,8 +202,8 @@ public class Cursos extends ActionBarActivity {
 
 
 
-    private void agregarCurso(String area, String nombre, String link, String profe) {
-       Curso nuevoCurso =new Curso(area,nombre,link,profe);//añado los param
+    private void agregarCurso(String area, String nombre, String link, String profe, Uri imageUri) {
+       Curso nuevoCurso =new Curso(area,nombre,link,profe,imageUri);//añado los param
        // Lo agregamos al adapter
        adapter.add(nuevoCurso);
         //cuando ya se agrega el curso auto se le notifica al listView que hay una modificacion y actualiza
@@ -212,6 +215,9 @@ public class Cursos extends ActionBarActivity {
         txt_nombre.getText().clear();
         txt_link.getText().clear();
         txt_profe.getText().clear();
+        //restablecemos la imagen por default
+        imgViewCurso.setImageResource(R.drawable.ic_cam);
+        txt_area.requestFocus();
     }
 
     //Cuando el ususario toque la pantalla donde está la imagen, saldrá un dialogo y que pueda escoger una foto de su galeria

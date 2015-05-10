@@ -117,11 +117,6 @@
         android:textColor="#fff9fbff"
         android:textSize="20dp" />
 
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="@drawable/im_sqlite_min" />
-
 
     </LinearLayout>
 </ScrollView>

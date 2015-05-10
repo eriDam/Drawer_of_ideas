@@ -19,11 +19,35 @@
             android:background="@drawable/linearlayout_bg">
 
              <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:text="Preguntas acertadas: "
+                     android:id="@+id/textView9"
+                     android:textColor="#fff9fbff" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:text="0"
+                     android:id="@+id/tv_puntuacion"
+                     android:layout_gravity="center_horizontal"
+                     android:textColor="#fff9fbff"
+                     android:layout_marginLeft="10dp" />
+             </LinearLayout>
+
+             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                  android:layout_gravity="center"
-                 android:layout_marginTop="100dp">
+                 android:layout_marginTop="50dp">
 
                  <TextView
                     android:layout_width="match_parent"

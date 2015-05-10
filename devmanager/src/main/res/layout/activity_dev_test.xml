@@ -32,7 +32,15 @@
                     android:textSize="25dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="200dp" />
+                    android:layout_marginBottom="80dp" />
+
+                <ImageView
+                    android:layout_width="157dp"
+                    android:layout_height="157dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:src="@drawable/im_test" />
 
                 <Button
                     android:id="@+id/btn_empezar"
@@ -42,6 +50,7 @@
                     style="@style/ButtonText"
                     android:background="@drawable/button_pers"
                     android:layout_gravity="center" />
+
             </LinearLayout>
 
         </LinearLayout>
