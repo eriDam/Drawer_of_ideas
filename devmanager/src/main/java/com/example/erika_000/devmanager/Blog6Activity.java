@@ -133,7 +133,7 @@ public class Blog6Activity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_blog6, menu);
         return true;
     }
 
@@ -149,6 +149,7 @@ public class Blog6Activity extends ActionBarActivity {
                 Intent abre;
                 abre = new Intent(Blog6Activity.this, MainActivity.class);
                 startActivity(abre);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_devtest:
                 Toast.makeText(getApplicationContext(), "DEVTEST", Toast.LENGTH_SHORT).show();
@@ -156,6 +157,7 @@ public class Blog6Activity extends ActionBarActivity {
                 Intent abreDev;
                 abreDev = new Intent(Blog6Activity.this, DevTest.class);
                 startActivity(abreDev);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_lessons:
                 Toast.makeText(getApplicationContext(), "LESSONS", Toast.LENGTH_SHORT).show();
@@ -163,6 +165,7 @@ public class Blog6Activity extends ActionBarActivity {
                 Intent abreLessons;
                 abreLessons = new Intent(Blog6Activity.this, Lessons2Activity.class);
                 startActivity(abreLessons);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_profile:
                 Toast.makeText(getApplicationContext(), "PERFILES", Toast.LENGTH_SHORT).show();
@@ -170,6 +173,7 @@ public class Blog6Activity extends ActionBarActivity {
                 Intent abreProf;
                 abreProf = new Intent(Blog6Activity.this, Prof3Activity.class);
                 startActivity(abreProf);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_git: /**Este Id  hace referencia al id del item del menu, en este caso buscar*/
                 Toast.makeText(getApplicationContext(), "ONCODE", Toast.LENGTH_SHORT).show();
@@ -177,21 +181,17 @@ public class Blog6Activity extends ActionBarActivity {
                 Intent abreGit;
                 abreGit = new Intent(Blog6Activity.this, OnCode4Activity.class);
                 startActivity(abreGit);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_gestion:
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreGestion;
-                abreGestion = new Intent(Blog6Activity.this, Gestion5Activity.class);
+                abreGestion = new Intent(Blog6Activity.this, Gestion5Lessons.class);
                 startActivity(abreGestion);
+                finish();//finalizo activity para liberar memoria
                 return true;
-            case R.id.menu_blog:
-                Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
-                //arrancar la siguiente activity
-                Intent abreBlog;
-                abreBlog = new Intent(Blog6Activity.this, Blog6Activity.class);
-                startActivity(abreBlog);
-                return true;
+
             case R.id.action_settings:
                 Toast.makeText(getApplicationContext(), "SETTINGS", Toast.LENGTH_SHORT).show();
                 //TODO crear opciones de personalización

@@ -95,9 +95,8 @@ public class splash_screen extends ActionBarActivity {
        // super.onPreExecute();
         dialog = new ProgressDialog(splash_screen.this);
         dialog.setTitle("Mezclando Preguntas");
-        dialog.setMessage("A continuación tendrás cada pregunta\n" +
-                "          con 4 opciones para elegir como respuesta." +
-                "          Disfruta y aprende futur@ Dev  :) ");
+        dialog.setMessage("A continuación tendrás cada pregunta con 4 opciones para elegir como respuesta." +
+                "Disfruta y aprende futur@ Dev  :) ");
         dialog.show();//Para mostrar
        }
 
@@ -106,7 +105,7 @@ public class splash_screen extends ActionBarActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
           //Guardo preferencias por que ya ha sido cargado
-            guardarPreferencias(true);
+            guardarPreferencias(false);
             if(dialog.isShowing())//Si se muestra...
             {
                 Intent intent = new Intent(splash_screen.this, Jugar.class);

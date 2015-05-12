@@ -1,6 +1,7 @@
 package com.example.erika_000.devmanager;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.CardView;
@@ -16,16 +17,16 @@ public class Lessons2Activity extends ActionBarActivity {
     CardView card_qt;
     CardView card_android;
     CardView card_js;
-    CardView card_php_1;
+    CardView card_php_1,card_php;
     CardView card_jquery;
     CardView card_json;
     CardView card_mysql;
     CardView card_sqlite;
     CardView card_html;
-    CardView card_css;
+    CardView card_dw;
     CardView card_ps;
     CardView card_ilustr;
-    CardView card_css2;
+    CardView card_css2,card_css_web;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class Lessons2Activity extends ActionBarActivity {
         card_android = (CardView)findViewById(R.id.card_android);
         card_js = (CardView)findViewById(R.id.card_js);
         card_php_1 = (CardView)findViewById(R.id.card_php_1);
+        card_php  = (CardView)findViewById(R.id.card_php);
         card_jquery = (CardView)findViewById(R.id.card_jquery);
         card_json = (CardView)findViewById(R.id.card_json);
 
@@ -53,6 +55,8 @@ public class Lessons2Activity extends ActionBarActivity {
         card_ps = (CardView)findViewById(R.id.card_ps);
         card_ilustr = (CardView)findViewById(R.id.card_ilustr);
         card_css2 = (CardView)findViewById(R.id.card_css2);
+        card_css_web = (CardView)findViewById(R.id.card_css_web);
+        card_dw =  (CardView)findViewById(R.id.card_dw);
 
         //Eventos  cards
         card_cpp.setOnClickListener(new CardView.OnClickListener() {
@@ -95,6 +99,131 @@ public class Lessons2Activity extends ActionBarActivity {
             }
         });
 
+        card_php_1.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://php.net/"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+         card_jquery.setOnClickListener(new CardView.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+
+                 Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.desarrolloweb.com/articulos/curso-jquery.html"));
+                 startActivity(intento);
+                 finish();//finalizo activity para liberar memoria
+
+             }
+        });
+         card_json.setOnClickListener(new CardView.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+
+                 Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.w3schools.com/json/"));
+                 startActivity(intento);
+                 finish();//finalizo activity para liberar memoria
+
+             }
+        });
+        card_mysql.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://programacion.net/articulo/tutorial_basico_de_mysql_189"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_sqlite.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.tutorialspoint.com/sqlite/"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_html.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.w3schools.com/html/html5_intro.asp"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_css2.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.desarrolloweb.com/manuales/css3.html"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_css_web.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.desarrolloweb.com/manuales/css3.html"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+
+
+        card_dw.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.desarrolloweb.com/articulos/332.php"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_php.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://php.net/"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_ps.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cursosenhd.com/featured/curso-completo-photoshop-cs6-complete-course-chapter-1/"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+        card_ilustr.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.aulaclic.es/illustratorcs3/"));
+                startActivity(intento);
+                finish();//finalizo activity para liberar memoria
+
+            }
+        });
+
+
+
 
     }//Fin onCreate
 
@@ -103,7 +232,7 @@ public class Lessons2Activity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_lessons2, menu);
         return true;
     }
 
@@ -119,27 +248,25 @@ public class Lessons2Activity extends ActionBarActivity {
                 Intent abre;
                 abre = new Intent(Lessons2Activity.this, MainActivity.class);
                 startActivity(abre);
+                finish();//finalizo activity para liberar memoria
                 return true;
+
             case R.id.menu_devtest:
                 Toast.makeText(getApplicationContext(), "DEVTEST", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreDev;
                 abreDev = new Intent(Lessons2Activity.this, DevTest.class);
                 startActivity(abreDev);
+                finish();
                 return true;
-            case R.id.menu_lessons:
-                Toast.makeText(getApplicationContext(), "LESSONS", Toast.LENGTH_SHORT).show();
-                //arrancar la siguiente activity
-                Intent abreLessons;
-                abreLessons = new Intent(Lessons2Activity.this, Lessons2Activity.class);
-                startActivity(abreLessons);
-                return true;
+
             case R.id.menu_profile:
                 Toast.makeText(getApplicationContext(), "PERFILES", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreProf;
                 abreProf = new Intent(Lessons2Activity.this, Prof3Activity.class);
                 startActivity(abreProf);
+                finish();
                 return true;
             case R.id.menu_git: /**Este Id  hace referencia al id del item del menu, en este caso buscar*/
                 Toast.makeText(getApplicationContext(), "ONCODE", Toast.LENGTH_SHORT).show();
@@ -147,20 +274,23 @@ public class Lessons2Activity extends ActionBarActivity {
                 Intent abreGit;
                 abreGit = new Intent(Lessons2Activity.this, OnCode4Activity.class);
                 startActivity(abreGit);
+                finish();
                 return true;
             case R.id.menu_gestion:
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreGestion;
-                abreGestion = new Intent(Lessons2Activity.this, Gestion5Activity.class);
+                abreGestion = new Intent(Lessons2Activity.this, Gestion5Lessons.class);
                 startActivity(abreGestion);
+                finish();
                 return true;
             case R.id.menu_blog:
-                Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "BLOG", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreBlog;
                 abreBlog = new Intent(Lessons2Activity.this, Blog6Activity.class);
                 startActivity(abreBlog);
+                finish();
                 return true;
             case R.id.action_settings:
                 Toast.makeText(getApplicationContext(), "SETTINGS", Toast.LENGTH_SHORT).show();

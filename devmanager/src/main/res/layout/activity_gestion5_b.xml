@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btn_crear"
                     android:layout_centerHorizontal="true"
-                    android:drawableLeft="@drawable/ic_add"
+                    android:drawableLeft="@drawable/ic_edit"
                     android:padding="10dp"
                     android:text="@string/insertar"
                     android:gravity="center"

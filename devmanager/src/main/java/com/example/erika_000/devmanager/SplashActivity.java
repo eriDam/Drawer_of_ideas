@@ -19,7 +19,7 @@ public class SplashActivity extends Activity {
      * splashScreen, en este caso para la
      * ejecución de 5000 milisegundos
      */
-    private static final long RETARDO = 2000;
+    private static final long RETARDO = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

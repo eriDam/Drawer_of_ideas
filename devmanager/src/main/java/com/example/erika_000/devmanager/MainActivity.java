@@ -34,16 +34,17 @@ public class MainActivity extends ActionBarActivity {
         card_cpp_h      = (CardView) findViewById(R.id.card_cpp_h);
         card_qt_h       = (CardView) findViewById(R.id.card_qt_h);
         card_android_h  = (CardView) findViewById(R.id.card_android_h);
-        card_test  = (CardView) findViewById(R.id.card_test);
+        card_test       = (CardView) findViewById(R.id.card_test);
 
         btn_profile     = (Button) findViewById(R.id.btn_profile);
         btn_profile2    = (Button) findViewById(R.id.btn_profile2);
         btn_profile3    = (Button) findViewById(R.id.btn_profile3);
         btn_oncode_git  = (Button) findViewById(R.id.btn_oncode_git);
+        btn_oncode2      = (Button) findViewById(R.id.btn_oncode2);
         btn_bd          = (Button) findViewById(R.id.btn_bd);
         btn_mas_lessons = (Button) findViewById(R.id.btn_mas_lessons);
         btn_mas_prof    = (Button) findViewById(R.id.btn_mas_prof);
-        btn_mas_gest    = (Button) findViewById(R.id.label_nombre);
+        btn_mas_gest    = (Button) findViewById(R.id.btn_mas_gest);
         btn_mas_blog    = (Button) findViewById(R.id.btn_mas_blog);
         btn_mas_oncode  = (Button) findViewById(R.id.btn_mas_oncode);
         btn_mas_test    = (Button) findViewById(R.id.btn_mas_test);
@@ -120,8 +121,10 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent abreGoogle = new Intent(MainActivity.this,WebProfGoogle.class);
-                startActivity(abreGoogle);
+//                Intent abreGoogle = new Intent(MainActivity.this,WebProfGoogle.class);
+//                startActivity(abreGoogle);
+                Intent intentoG = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/u/0/"));
+                startActivity(intentoG);
 
 
             }
@@ -175,6 +178,14 @@ public class MainActivity extends ActionBarActivity {
 //                startActivity(intento);
             }
         });
+        btn_oncode2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoT = new Intent(Intent.ACTION_VIEW, Uri.parse("https:/www.trello.com"));
+               startActivity(intentoT);
+            }
+        });
 
         btn_bd.setOnClickListener(new Button.OnClickListener() {
             //            @Override
@@ -202,7 +213,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View view) {
 
                 //arrancar la siguiente activity
-                Intent intent = new Intent(MainActivity.this, Gestion5Activity.class);
+                Intent intent = new Intent(MainActivity.this, Gestion5Lessons.class);
                 startActivity(intent);
 
             }
@@ -247,15 +258,6 @@ public class MainActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.menu_inicio:
-                Toast.makeText(getApplicationContext(), "INICIO", Toast.LENGTH_SHORT).show();
-                //arrancar la siguiente activity
-                Intent abre;
-                abre = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(abre);
-
-
-                return true;
             case R.id.menu_devtest:
                 Toast.makeText(getApplicationContext(), "DEVTEST", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
@@ -292,12 +294,12 @@ public class MainActivity extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreGestion;
-                abreGestion = new Intent(MainActivity.this, Gestion5Activity.class);
+                abreGestion = new Intent(MainActivity.this, Gestion5Lessons.class);
                 startActivity(abreGestion);
 
                 return true;
             case R.id.menu_blog:
-                Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "BLOG", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreBlog;
                 abreBlog = new Intent(MainActivity.this, Blog6Activity.class);
