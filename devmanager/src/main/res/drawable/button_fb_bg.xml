@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This xml is defining the geometric shape, color and gradient
+in two different states (press and normal )
+-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" >
         <shape>
@@ -8,7 +11,7 @@
                 android:width="1dp"
                 android:color="#2f6699" />
             <corners
-                android:radius="2dp" />
+                android:radius="8dp" />
            
         </shape>
     </item>
@@ -22,7 +25,7 @@
                 android:width="1dp"
                 android:color="#2f6699" />
             <corners
-                android:radius="2dp" />
+                android:radius="8dp" />
            
         </shape>
     </item>

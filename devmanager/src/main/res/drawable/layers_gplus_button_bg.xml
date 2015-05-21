@@ -6,7 +6,7 @@
     <item 
         android:top="0dp" android:left="3dp">
         <bitmap android:src="@drawable/icon_gplus_min"
-          android:gravity="left" />
+          android:gravity="center" />
     </item>      
 </layer-list>
 

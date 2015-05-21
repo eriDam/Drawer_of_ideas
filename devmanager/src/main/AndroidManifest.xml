@@ -69,7 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Jugar"
             android:label="@string/title_activity_jugar" >
@@ -105,6 +104,14 @@
         <activity
             android:name=".Gestion5Lessons"
             android:label="@string/title_activity_gestion5_lessons" >
+        </activity>
+        <activity
+            android:name=".VideoPlayer"
+            android:label="@string/title_activity_media_player" >
+        </activity>
+        <activity
+            android:name=".DevNotes"
+            android:label="@string/title_activity_dev_notes" >
         </activity>
     </application>
 

@@ -60,6 +60,10 @@
     <string name="cardview_radius_seekbar_text">Radius</string>
     <string name="cardview_elevation_seekbar_text">Elevation</string>
 
+   <!-- DevNotes-->
+    <string name="escribir_mem">Escribir Nota</string>
+    <string name="leer_mem">Leer Nota</string>
+    <string name="leer_raw">Leer Raw</string>
 
     <!-- Lista de titulos de navegacion del navDrawer-->
     <string-array name="nav_options">
@@ -148,4 +152,6 @@
     <string name="label_link">Link:</string>
     <string name="title_activity_noticia">Noticia</string>
     <string name="title_activity_noticias">Noticias</string>
+    <string name="title_activity_media_player">MediaPlayer</string>
+    <string name="title_activity_dev_notes">DevNotes</string>
 </resources>

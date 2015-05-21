@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
     private Button
             btn_profile, btn_profile2, btn_profile3,
             btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog_roll,
-            btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog;
+            btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog, btn_video_player, btn_youtube;
 
     private static final String TAG = "Fragment HOME";
 
@@ -49,6 +49,8 @@ public class MainActivity extends ActionBarActivity {
         btn_mas_oncode  = (Button) findViewById(R.id.btn_mas_oncode);
         btn_mas_test    = (Button) findViewById(R.id.btn_mas_test);
         btn_blog_roll   = (Button) findViewById(R.id.btn_blog_roll);
+        btn_video_player = (Button) findViewById(R.id.btn_video_player);
+        btn_youtube      = (Button) findViewById(R.id.btn_youtube);
 
     /*Eventos Lessons btn mas*/
         btn_mas_lessons.setOnClickListener(new Button.OnClickListener() {
@@ -237,6 +239,16 @@ public class MainActivity extends ActionBarActivity {
 
                 //arrancar la siguiente activity
                 Intent intent = new Intent(MainActivity.this, Blog6Activity.class);
+                startActivity(intent);
+
+            }
+        });
+        btn_video_player.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //arrancar la siguiente activity
+                Intent intent = new Intent(MainActivity.this, Music_activity.class);
                 startActivity(intent);
 
             }

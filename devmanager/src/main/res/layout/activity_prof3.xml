@@ -78,7 +78,6 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:text="Sign in with Google+"
                     android:textSize="10dp"
                     android:layout_marginTop="5dp" />
 
@@ -93,7 +92,6 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:text="Sign in with Facebook"
                     android:textSize="10dp"
                     android:layout_marginTop="5dp" />
             </LinearLayout>
@@ -119,7 +117,6 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:text="Sign in with Twitter"
                     android:textSize="10dp"
                     android:layout_marginTop="5dp" />
 
@@ -129,12 +126,11 @@
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/layers_pers2_button_bg"
+                    android:background="@drawable/layers_git_button_bg"
                     android:paddingBottom="10dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:text="Sign in with GitHub"
                     android:textSize="10dp"
                     android:layout_marginTop="5dp" />
             </LinearLayout>
@@ -147,20 +143,20 @@
                 android:padding="10dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="25dp">
+                android:layout_marginBottom="25dp"
+                android:gravity="center">
 
 
                 <Button
                     android:id="@+id/btn_youtube"
                     style="@style/ButtonText"
-                    android:layout_width="match_parent"
+                    android:layout_width="167dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/layers_gplus_button_bg"
+                    android:background="@drawable/layers_pers2_button_bg"
                     android:paddingBottom="10dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="10dp"
-                    android:text="Sign in with Youtube"
                     android:textSize="10dp"
                     android:layout_marginTop="5dp" />
             </LinearLayout>
