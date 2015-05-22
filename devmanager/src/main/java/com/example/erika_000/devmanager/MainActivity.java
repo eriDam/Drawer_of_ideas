@@ -16,11 +16,13 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
     //Botones
-    private CardView card_cpp_h, card_qt_h, card_android_h, card_test;
+    private CardView card_cpp_h, card_qt_h, card_android_h, card_test,
+    card_music, card_notes;
     private Button
             btn_profile, btn_profile2, btn_profile3,
             btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog_roll,
-            btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog, btn_video_player, btn_youtube;
+            btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog,
+            btn_video_player, btn_youtube,            btn_git;
 
     private static final String TAG = "Fragment HOME";
 
@@ -31,10 +33,22 @@ public class MainActivity extends ActionBarActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
+        //Llamo al metodo iniciar controles
+        iniciarControles();
+
+        Log.i(TAG, getClass().getSimpleName() + ":entered onActivityCreated()");
+    }
+
+
+//Metodo para recuperar los controles mediante su id, para descargar el onCreate
+    private void iniciarControles() {
+        //Obtnego los controls mediante su id
         card_cpp_h      = (CardView) findViewById(R.id.card_cpp_h);
         card_qt_h       = (CardView) findViewById(R.id.card_qt_h);
         card_android_h  = (CardView) findViewById(R.id.card_android_h);
         card_test       = (CardView) findViewById(R.id.card_test);
+        card_music      = (CardView) findViewById(R.id.card_music);
+        card_notes      = (CardView) findViewById(R.id.card_notes);
 
         btn_profile     = (Button) findViewById(R.id.btn_profile);
         btn_profile2    = (Button) findViewById(R.id.btn_profile2);
@@ -51,8 +65,9 @@ public class MainActivity extends ActionBarActivity {
         btn_blog_roll   = (Button) findViewById(R.id.btn_blog_roll);
         btn_video_player = (Button) findViewById(R.id.btn_video_player);
         btn_youtube      = (Button) findViewById(R.id.btn_youtube);
+        btn_git          = (Button) findViewById(R.id.btn_git);
 
-    /*Eventos Lessons btn mas*/
+        /*Eventos Lessons btn mas*/
         btn_mas_lessons.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +121,16 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+        card_notes.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intentoTest = new Intent(MainActivity.this,DevNotes.class);
+                startActivity(intentoTest);
+
+
+            }
+        });
         /*Eventos Perfiles*/
         btn_mas_prof.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -185,7 +209,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View view) {
 
                 Intent intentoT = new Intent(Intent.ACTION_VIEW, Uri.parse("https:/www.trello.com"));
-               startActivity(intentoT);
+                startActivity(intentoT);
             }
         });
 
@@ -195,8 +219,8 @@ public class MainActivity extends ActionBarActivity {
 //                //arrancar la siguiente activity
 //                Intent intent = new Intent(MainActivity.this,Gestion5Activity.class);
 //                startActivity(intent);
-                 Intent intent = new Intent(MainActivity.this,Gestion5Lessons.class);
-                 startActivity(intent);
+                Intent intent = new Intent(MainActivity.this,Gestion5Lessons.class);
+                startActivity(intent);
 
             }
         });
@@ -253,8 +277,17 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+        btn_youtube.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        Log.i(TAG, getClass().getSimpleName() + ":entered onActivityCreated()");
+                //abro navegador
+                Intent intentoY = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCnx8IvRaWinWN9I6VrBdFDQ"));
+                startActivity(intentoY);
+
+            }
+        });
+        Log.i(TAG, getClass().getSimpleName() + ":entered Controles iniciados");
     }
 
     @Override

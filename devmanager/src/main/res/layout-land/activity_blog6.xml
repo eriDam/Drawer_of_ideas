@@ -15,7 +15,8 @@
         android:layout_marginBottom="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp">
+        android:layout_marginLeft="15dp"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="match_parent"
@@ -29,151 +30,125 @@
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp" />
-
+            android:layout_marginBottom="20dp"
+            android:layout_weight="9.30" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linearlayout_bg"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="9.30">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_rss_xak"
+                android:id="@+id/button"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_rss_min"
                 android:gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp" />
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_rss_min"
+                android:text="Ver rss Xatakandroid"
+                android:padding="15dp"
+                android:textAlignment="center" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_feedly"
-                android:background="@drawable/ic_feedly"
-                android:layout_marginRight="50dp"
+                android:id="@+id/button2"
+                android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp" />
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Ir a mi feedly"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_feedly" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:text="Blog Android Developers "
+                android:drawableLeft="@drawable/ic_android_dev"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_qt_"
+                android:text="Blog Qt Developers" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_andoide_libre"
+                android:text="Blog el Androide libre" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                android:layout_gravity="center"
+                android:text="Blog ecabDam"
+                android:drawableLeft="@drawable/ic_blog_eri" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button7"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_minidosis"
+                android:text="Blog Minidosis c++" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_sgoliver"
+                android:text="Blog SgOliver" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button9"
+                android:layout_gravity="center"
+                android:text="Blog Codigo Al"
+                android:drawableLeft="@drawable/ic_codalonso" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Blog Roll"
+                android:id="@+id/textView10"
+                android:autoText="false"
+                android:textColor="#ff2585ff"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_geeky"
+                android:text="Blog Geeky theory" />
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_android"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_android_dev"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_qt"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_qt_"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_androide_libre"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_andoide_libre"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_eridam"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_blog_eri"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_minidosis"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_minidosis"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="50dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_sgoliver"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_sgoliver"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_codalonso"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_codalonso"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_blog_geeky"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_geeky"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 

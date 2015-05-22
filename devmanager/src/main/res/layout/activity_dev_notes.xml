@@ -14,29 +14,55 @@
         android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:orientation="vertical"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linearlayout_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nota"
+            android:id="@+id/txtv_contenido"
+            android:layout_margin="10dp"
+            android:textSize="24dp"
+            android:textColor="#ff3a77ff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/et_nota"
+            android:hint="Escribe aquí tu nota!!"
+            android:minLines="50"
+            android:textColor="#ffe7ecff"
+            android:textColorHint="#ff61a5ff"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button android:text="@string/escribir_mem"
             android:layout_height="wrap_content"
             android:layout_width="180dp"
             android:id="@+id/BtnEscribirFichero"
             android:layout_weight="1"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_my"
+            android:layout_margin="5dp" />
 
         <Button android:text="@string/leer_mem"
             android:id="@+id/BtnLeerFichero"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_gravity="center" />
-
-        <Button android:text="@string/leer_raw"
-            android:layout_height="wrap_content"
-            android:layout_width="180dp"
-            android:id="@+id/BtnLeerRaw"
-            android:layout_weight="1"
-            android:layout_gravity="center" />
-
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_my"
+            android:layout_margin="5dp" />
     </LinearLayout>
 
 </LinearLayout>

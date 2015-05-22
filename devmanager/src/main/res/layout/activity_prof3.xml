@@ -152,7 +152,7 @@
                     style="@style/ButtonText"
                     android:layout_width="167dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/layers_pers2_button_bg"
+                    android:background="@drawable/layers_pers2_btn_star"
                     android:paddingBottom="10dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"

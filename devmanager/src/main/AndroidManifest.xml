@@ -113,6 +113,11 @@
             android:name=".DevNotes"
             android:label="@string/title_activity_dev_notes" >
         </activity>
+        <activity
+            android:name=".Music_activity"
+            android:label="@string/title_activity_music" >
+        </activity>
+
     </application>
 
 </manifest>
