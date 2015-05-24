@@ -32,31 +32,41 @@
             android:layout_marginBottom="20dp" />
 
 
-        <Button
-            android:layout_width="212dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_rss_xak"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/ic_rss_min"
-            android:text="Ver rss Xatakandroid"
-            android:padding="15dp"
-            android:textAlignment="center" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="212dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_feedly"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:text="Ir a mi feedly"
-            android:layout_gravity="center_horizontal"
-            android:drawableLeft="@drawable/ic_feedly" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:id="@+id/btn_feedly"
+                android:text="Ir a mi feedly"
+                android:layout_gravity="center"
+                android:background="@drawable/linearlayout_bg"
+                android:textColor="#fffcfdff"
+                android:drawableTop="@drawable/ic_feedly"
+                android:padding="15dp"
+                android:layout_margin="5dp"
+                android:textSize="12dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:id="@+id/btn_rss_xak"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="Lector Xatakandroid"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:background="@drawable/linearlayout_bg"
+                android:textColor="#fffcfdff"
+                android:drawableTop="@drawable/ic_min_rss"
+                android:layout_margin="5dp"
+                android:textSize="12dp"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
@@ -64,7 +74,13 @@
             android:id="@+id/btn_blog_android"
             android:text="Blog Android Developers "
             android:drawableLeft="@drawable/ic_android_dev"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:textColor="#fff8fffd"
+            android:background="@drawable/linearlayout_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -72,7 +88,11 @@
             android:id="@+id/btn_blog_qt"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_qt_"
-            android:text="Blog Qt Developers" />
+            android:text="Blog Qt Developers"
+            android:textColor="#fff8fffd"
+            android:background="@drawable/linearlayout_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -80,7 +100,13 @@
             android:id="@+id/btn_blog_androide_libre"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_andoide_libre"
-            android:text="Blog el Androide libre" />
+            android:text="Blog el Androide libre"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -88,7 +114,13 @@
             android:id="@+id/btn_blog_eridam"
             android:layout_gravity="center"
             android:text="Blog ecabDam"
-            android:drawableLeft="@drawable/ic_blog_eri" />
+            android:drawableLeft="@drawable/ic_blog_eri"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -96,7 +128,13 @@
             android:id="@+id/btn_blog_minidosis"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_minidosis"
-            android:text="Blog Minidosis c++" />
+            android:text="Blog Minidosis c++"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -104,7 +142,13 @@
             android:id="@+id/btn_blog_sgoliver"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_sgoliver"
-            android:text="Blog SgOliver" />
+            android:text="Blog SgOliver"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -112,7 +156,13 @@
             android:id="@+id/btn_blog_codalonso"
             android:layout_gravity="center"
             android:text="Blog Codigo Al"
-            android:drawableLeft="@drawable/ic_codalonso" />
+            android:drawableLeft="@drawable/ic_codalonso"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -120,7 +170,13 @@
             android:id="@+id/btn_blog_geeky"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/ic_geeky"
-            android:text="Blog Geeky theory" />
+            android:text="Blog Geeky theory"
+            android:background="@drawable/linearlayout_bg"
+            android:textColor="#fff8fffd"
+            android:padding="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
     </LinearLayout>
 

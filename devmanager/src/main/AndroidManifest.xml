@@ -117,7 +117,14 @@
             android:name=".Music_activity"
             android:label="@string/title_activity_music" >
         </activity>
-
+        <activity
+            android:name=".NotesFecha"
+            android:label="@string/title_activity_notes_fecha" >
+        </activity>
+        <activity
+            android:name=".AdminLessons"
+            android:label="@string/title_activity_admin_lessons" >
+        </activity>
     </application>
 
 </manifest>

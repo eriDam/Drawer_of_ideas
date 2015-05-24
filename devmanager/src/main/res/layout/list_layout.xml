@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:baselineAligned="true"
     android:orientation="horizontal"
-    android:background="@drawable/bg_dpgris"
     android:alpha="0.5">
     <TextView
         android:id="@+id/_id"

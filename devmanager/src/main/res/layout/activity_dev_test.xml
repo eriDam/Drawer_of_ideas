@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
@@ -13,14 +13,14 @@
         android:background="@drawable/bg_dpgris">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@drawable/linearlayout_bg">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="617dp"
+                android:layout_height="match_parent"
                 android:weightSum="1"
                 android:background="@drawable/im_yellow_pencil_test">
 
@@ -34,7 +34,7 @@
                     android:textSize="30dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="500dp" />
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/btn_empezar"
@@ -43,11 +43,11 @@
                     android:text="@string/empezar"
                     style="@style/ButtonText"
                     android:background="@drawable/btn_blue_my"
-                    android:layout_marginTop="120dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp" />
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="bottom" />
 
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>

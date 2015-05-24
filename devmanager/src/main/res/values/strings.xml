@@ -156,4 +156,6 @@
     <string name="title_activity_dev_notes">DevNotes</string>
     <string name="title_activity_music">Música</string>
     <string name="music">Música</string>
+    <string name="title_activity_notes_fecha">NotesFecha</string>
+    <string name="title_activity_admin_lessons">AdminLessons</string>
 </resources>

@@ -53,7 +53,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
-                android:drawableLeft="@drawable/ic_rss_min"
+                android:drawableLeft="@drawable/ic_min_rss"
                 android:text="Ver rss Xatakandroid"
                 android:padding="15dp"
                 android:textAlignment="center" />

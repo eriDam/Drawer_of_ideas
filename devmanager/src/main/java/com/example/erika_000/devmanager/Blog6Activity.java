@@ -40,8 +40,8 @@ public class Blog6Activity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent abreGoogle = new Intent(Blog6Activity.this,NoticiasActivity.class);
-                startActivity(abreGoogle);
+                Intent abreRss = new Intent(Blog6Activity.this,NoticiasActivity.class);
+                startActivity(abreRss);
             }
         });
         btn_feedly.setOnClickListener(new Button.OnClickListener() {

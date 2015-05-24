@@ -27,6 +27,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -57,7 +58,7 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
     ToggleButton tButtonMusica;
     //También vamos a manipular el text view
     TextView tView;
-
+    ImageButton im_btn_play;
 
     //Creamos el MediaPlayer
     private MediaPlayer mPlayer;
@@ -75,8 +76,7 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
         //Localizamos/recuperamos los elementos mediante su id
         tButtonMusica = (ToggleButton) findViewById(R.id.toggleButtonMusica);
         tView = (TextView) findViewById(R.id.tView);
-
-
+        im_btn_play  = (ImageButton) findViewById(R.id.im_btn_play);
         /**
          * Capturamos/Guardamos las preferencias de usuario
          * Con la clase SharedPreferences realizaremos 2 partes, lectura y escritura
@@ -147,7 +147,7 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
          /*CARGAMOS LA CANCIÓN NUEVA FORMA - NO HACE FALTA GENERAR UN NUEVO SOUNDPOOL
         * Con el método estático MediaPlayer create, le pasamos this  para indicarle este activity
         * y dónde está el Id de la canción. Una vez que lo cree me devolverá un indentificador mPlayer como objeto MediaPlayer*/
-        mPlayer = MediaPlayer.create(this, R.raw.miraclelong);
+        mPlayer = MediaPlayer.create(this, R.raw.theecstasyofgold);
         /**
          * Hemos sustituido el setOnLoadCompleteListener por setOnPreparedListener,
          * que lo que implementa es un Listener de tipo onPrepare*/
@@ -165,6 +165,8 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
                                               Log.d("AUDIO", "Cargada la cancion");
                                               if (audioActivado != true) {
                                                   tButtonMusica.setEnabled(true);//ponemos el tButtonMusica activo
+                                                  im_btn_play.setEnabled(true);
+
                                               }//Fin if
                                           }//Fin onPrepared
                                       }
@@ -172,15 +174,65 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
         //Activar o desactivar el boton dependiendo de preferencias
         if (audioActivado) {
             tButtonMusica.setChecked(true);
+            im_btn_play.setImageResource(R.drawable.btn_play_press);
+            //im_btn_play.setBackground();
             //hacer sonar audio
             mPlayer.start();
             tView.setText("Sonido Activado");
         } else {
             tButtonMusica.setChecked(false);
+            im_btn_play.setImageResource(R.drawable.btn_play_normal);
             mPlayer.pause();
             tView.setText("Sonido desactivado");
 
         }
+        // Suena la cancion con play
+        im_btn_play.setOnClickListener(new View.OnClickListener() {
+            /**Para escribir Preferencias se colocará en el evento del botón:
+             * , cogeremos el Editor y obtendremos los datos del boton directamente
+             * para escribirlos en el xml*/
+            SharedPreferences.Editor prefEd = pref.edit();
+            @Override
+            public void onClick(View v) {
+
+                if(audioActivado == false){
+                    im_btn_play.setImageResource(R.drawable.btn_play_normal);
+                    mPlayer.setVolume((float) mVolume / mVolumeMax,
+                            (float) mVolume / mVolumeMax);
+
+                    MessageBox("Audio" + audioActivado);
+
+
+                    //prefs Audio a true
+                    prefEd.putBoolean("Audio", true);
+                    prefEd.commit();//Actualizamos las pref
+                    MessageBox("Guardadas preferencias");
+                    //audio a play
+                    mPlayer.start();
+                    Log.d("AUDIO", "SONANDO");
+
+
+                } else {
+                    if (audioActivado == true) {
+                    im_btn_play.setImageResource(R.drawable.btn_play_press);
+                        mPlayer.setVolume((float) mVolume / mVolumeMax,
+                                (float) mVolume / mVolumeMax);
+
+                        //prefs Audio a false
+                        prefEd.putBoolean("Audio", false);
+                        MessageBox("Sonido Activado");
+
+                        prefEd.commit();//Actualizamos las pref
+                        MessageBox("Guardadas preferencias");
+                        //audio a pause
+                        mPlayer.pause();
+                        Log.d("AUDIO", "SONANDO");
+                    }
+                }//fin else
+
+            }
+
+        });
         // Suena la cancion
         tButtonMusica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -195,6 +247,7 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
                 if (audioActivado == false) {
                     //Activo el toggleButton
                     tButtonMusica.setChecked(true);
+                   im_btn_play.setImageResource(R.drawable.btn_play_normal);
 
                     mPlayer.setVolume((float) mVolume / mVolumeMax,
                             (float) mVolume / mVolumeMax);
@@ -213,6 +266,7 @@ public class Music_activity extends Activity implements CompoundButton.OnChecked
                 } else {
                     if (audioActivado == true) {//toggleButton False si estaba a true
                         tButtonMusica.setChecked(false);
+                         im_btn_play.setImageResource(R.drawable.btn_play_press);
                         mPlayer.setVolume((float) mVolume / mVolumeMax,
                                 (float) mVolume / mVolumeMax);
 

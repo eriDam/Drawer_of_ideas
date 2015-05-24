@@ -13,28 +13,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/eTBuscar"
-            android:layout_width="228dp"
-            android:layout_height="wrap_content"
-            android:autoText="false"
-            android:textSize="16sp" />
-
-        <ImageButton
-            android:id="@+id/iBtnBuscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/ic_menu_search" />
-
-        <ImageButton
-            android:id="@+id/iBtnEdit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/ic_menu_edit" />
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lista de Cursos"
+        android:id="@+id/textView12" />
 
     <ListView
         android:id="@+id/listView"

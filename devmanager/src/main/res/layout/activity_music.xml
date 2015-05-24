@@ -12,30 +12,7 @@
         android:layout_alignParentStart="true"
         android:gravity="center|fill"
         android:visibility="visible"
-        android:background="#ff5b5a5c">
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:id="@+id/buttonS"
-            android:textSize="60sp"
-            android:textColor="#ff5fc65a"
-            android:layout_alignTop="@+id/buttonB"
-            android:layout_toEndOf="@+id/toggleButtonMusica" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:id="@+id/buttonB"
-            android:textSize="60sp"
-            android:textColor="#ff5fc65a"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/toggleButtonMusica" />
-
+        android:background="@drawable/bg_music_volumeknob">
 
 
         <TextView
@@ -44,45 +21,56 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/textViewCount"
             android:text="0"
-            android:textSize="@android:dimen/thumbnail_height"
-            android:textColor="#ff5fc65a"
+            android:textSize="80dp"
+            android:textColor="#ff529af1"
             android:layout_gravity="top"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_below="@+id/linearLayout"
-            android:layout_centerHorizontal="true" />
+            android:layout_above="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
             android:layout_above="@+id/tView"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/linearLayout4">
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="25dp">
 
-            <ImageButton
-                android:id="@+id/imageBtn_stop"
-                android:layout_height="wrap_content"
+            <Button
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:src="@drawable/stop"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonB"
+                android:textSize="60sp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/toggleButtonMusica"
                 android:layout_weight="1"
-                android:scaleType="fitCenter" />
+                android:background="@drawable/btn_min_normal" />
 
             <ImageButton
-                android:id="@+id/imageBtn__play"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:src="@drawable/play"
-                android:layout_weight="1.96"
-                android:scaleType="fitCenter" />
+                android:layout_height="match_parent"
+                android:id="@+id/im_btn_play"
+                android:layout_above="@+id/tView"
+                android:layout_alignEnd="@+id/toggleButtonMusica"
+                android:background="@drawable/btn_play_normal"
+                android:layout_weight="2.23" />
 
-            <ImageButton
-                android:id="@+id/imageBtn_pause"
-                android:layout_height="wrap_content"
+            <Button
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:src="@drawable/pause"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonS"
+                android:textSize="60sp"
+                android:layout_alignTop="@+id/buttonB"
+                android:layout_toEndOf="@+id/toggleButtonMusica"
                 android:layout_weight="1"
-                android:scaleType="fitCenter" />
+                android:background="@drawable/btn_up_press" />
+
         </LinearLayout>
 
         <ToggleButton
@@ -92,7 +80,8 @@
             android:id="@+id/toggleButtonMusica"
             android:checked="false"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
 
         <TextView
             android:layout_width="wrap_content"

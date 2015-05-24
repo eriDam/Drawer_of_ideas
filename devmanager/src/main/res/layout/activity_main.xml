@@ -28,7 +28,7 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/tv_title_test"
@@ -36,10 +36,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:gravity="left|center"
-                    android:text="Extras"
+                    android:text="Utilidades"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#ff050001"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
 
                 <Button
                     style="@style/CardView"
@@ -49,7 +50,7 @@
                     android:id="@+id/btn_mas_test"
                     android:gravity="center"
                     android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
+                    android:background="@drawable/btn_blue_my"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="15dp" />
             </LinearLayout>
@@ -188,21 +189,15 @@
                     android:layout_gravity="center">
 
                     <!--fondo del cardView-->
-                    <Button
-                        style="@style/ButtonText"
-                        android:id="@+id/btn_video_player"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/layers_pers2_btn_star"
-                        android:paddingBottom="10dp"
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_reproductor"
                         android:paddingLeft="10dp"
+                        android:paddingTop="30dp"
                         android:paddingRight="10dp"
-                        android:paddingTop="10dp"
-                        android:textSize="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_gravity="center"
-                        android:gravity="center" />
-
+                        android:paddingBottom="10dp" />
                     <!--Titulo curso-->
                     <TextView
                         android:id="@+id/txt_music"
@@ -257,7 +252,8 @@
                     android:text="Lessons"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#ff050001"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
 
                 <Button
                     style="@style/CardView"
@@ -267,7 +263,7 @@
                     android:id="@+id/btn_mas_lessons"
                     android:gravity="center"
                     android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
+                    android:background="@drawable/btn_blue_my"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="15dp" />
             </LinearLayout>
@@ -317,7 +313,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:scaleType="fitCenter"
+                        android:scaleType="fitEnd"
                         android:src="@drawable/im_cpp_min"
                         android:paddingLeft="10dp"
                         android:paddingTop="30dp"
@@ -627,7 +623,175 @@
             </LinearLayout>
 
         </HorizontalScrollView>
+        <!--linear para título gestión-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff4f5ff"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/tv_title_gestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|center"
+                    android:text="Gestión"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff050001"
+                    android:layout_marginTop="10dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_title_blog_roll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|center"
+                    android:text="- Blog Roll"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff050001"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    style="@style/CardView"
+                    android:layout_width="48dp"
+                    android:layout_height="27dp"
+                    android:text="Más"
+                    android:id="@+id/btn_mas_blog"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:background="@drawable/btn_blue_my"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.06" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_sub_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Busca, edita y organiza - Sigue tus blogs  fácilmente"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewblog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <!--Linear para bd-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe5e6eb"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp">
+
+                <!--Botón de acceso a la BD listadoCursos con modos-->
+                <!--<Button-->
+                    <!--android:id="@+id/btn_bd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/btn_blue_my"-->
+                    <!--android:textColor="#fffffdfb"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:drawableTop="@drawable/ic_ok_database"-->
+                    <!--android:text="Lista"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_gravity="center" />-->
+
+                <Button
+                    android:id="@+id/btn_admin"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_my"
+                    android:textColor="#fffffdfb"
+                    android:textSize="14dp"
+                    android:drawableTop="@drawable/ic_ok_database"
+                    android:text="Gestión"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp" />
+
+                <Button
+                    android:id="@+id/btn_miblog"
+                    android:layout_width="110dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/btn_red"
+                    android:textColor="#fffffdfb"
+                    android:textSize="14dp"
+                    android:drawableTop="@drawable/ic_ecabdam_blog_min"
+                    android:text="Blog roll"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:singleLine="false" />
+
+                <Button
+                    android:id="@+id/btn_blog_roll"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffa929"
+                    android:textSize="14dp"
+                    android:drawableTop="@drawable/ic_min_rss"
+                    android:background="@drawable/btn_white"
+                    android:text="Lector"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/btn_feedly"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff368e1f"
+                    android:textSize="14dp"
+                    android:drawableTop="@drawable/ic_feedly"
+                    android:text="Feedly"
+                    android:background="@drawable/btn_white"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:hapticFeedbackEnabled="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+            <!--linear para título blog-->
+        </HorizontalScrollView>
+
+        <!--Linear para blog-->
         <!--linear para título perfiles-->
         <LinearLayout
             android:id="@+id/perfiles_tit"
@@ -652,7 +816,8 @@
                     android:text="Perfiles"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#ff050001"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
 
                 <Button
                     style="@style/CardView"
@@ -662,7 +827,7 @@
                     android:id="@+id/btn_mas_prof"
                     android:gravity="center"
                     android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
+                    android:background="@drawable/btn_blue_my"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="15dp" />
             </LinearLayout>
@@ -695,7 +860,7 @@
                 android:weightSum="1">
 
                 <Button
-                    android:id="@+id/btn_profile"
+                    android:id="@+id/btn_profile_go"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -707,7 +872,7 @@
                     android:paddingLeft="20dp" />
 
                 <Button
-                    android:id="@+id/btn_profile2"
+                    android:id="@+id/btn_profile_tw"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -717,11 +882,11 @@
                     style="@style/ButtonText" />
 
                 <Button
-                    android:id="@+id/btn_profile3"
+                    android:id="@+id/btn_profile_fc"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
-                    android:background="@drawable/layers_git_button_bg"
+                    android:background="@drawable/layers_fb_button_bg"
                     android:textColor="#fffffdfb"
                     android:textSize="10dp"
                     style="@style/ButtonText" />
@@ -741,7 +906,7 @@
 
                 <Button
                     style="@style/ButtonText"
-                    android:id="@+id/btn_git"
+                    android:id="@+id/btn_profile_git"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/layers_git_button_bg"
@@ -774,7 +939,8 @@
                     android:text="onCode"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#ff050001"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
 
 
                 <Button
@@ -785,7 +951,7 @@
                     android:id="@+id/btn_mas_oncode"
                     android:gravity="center"
                     android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
+                    android:background="@drawable/btn_blue_my"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="15dp" />
             </LinearLayout>
@@ -814,7 +980,7 @@
 
             <Button
                 android:id="@+id/btn_oncode_git"
-                android:layout_width="match_parent"
+                android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:background="@drawable/layers_git_button_bg"
@@ -826,159 +992,21 @@
                 android:layout_weight="1"
                 android:selectAllOnFocus="false"
                 android:padding="5dp"
-                android:drawableLeft="@drawable/ic_github_min" />
+                android:drawableTop="@drawable/ic_github_min" />
             <Button
                 android:id="@+id/btn_oncode2"
-                android:layout_width="match_parent"
+                android:layout_width="90dp"
                 android:layout_height="fill_parent"
                 android:layout_margin="3dp"
-                android:layout_weight="1"
-                android:background="#fffffafa"
+                android:background="@drawable/btn_white"
                 android:text="Trello"
                 android:textColor="#ff34b5e5"
                 android:textSize="10dp"
-                android:drawableLeft="@drawable/ic_trello_min"
-                android:padding="5dp" />
-        </LinearLayout>
-        <!--linear para título gestión-->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff4f5ff"
-            android:orientation="vertical">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <TextView
-                    android:id="@+id/tv_title_gestion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="left|center"
-                    android:text="Gestión"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#ff050001"
-                    android:layout_weight="1"/>
-
-
-                <Button
-                    style="@style/CardView"
-                    android:layout_width="48dp"
-                    android:layout_height="27dp"
-                    android:text="MÁS"
-                    android:id="@+id/btn_mas_gest"
-                    android:gravity="center"
-                    android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="15dp" />
-            </LinearLayout>
-
-
-            <TextView
-                android:id="@+id/tv_sub_man"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Busca, edita y organiza"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:padding="5dp"
+                android:drawableTop="@drawable/ic_trello_min"
+                android:layout_weight="1" />
         </LinearLayout>
 
-        <!--Linear para bd-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ffe5e6eb"
-            android:orientation="horizontal"
-            android:paddingBottom="7dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:paddingTop="7dp">
-
-
-            <Button
-                android:id="@+id/btn_bd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:background="@drawable/button_git_bg"
-                android:textColor="#fffffdfb"
-                android:textSize="10dp"
-                android:paddingLeft="3dp"
-                android:drawableBottom="@drawable/ic_action_bd_white"
-                android:layout_weight="0.23" />
-
-
-        </LinearLayout>
-        <!--linear para título blog-->
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff4f5ff"
-            android:orientation="vertical">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <TextView
-                    android:id="@+id/tv_title_blog_roll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:gravity="left|center"
-                    android:text="Blog Roll"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="#ff050001"
-                    android:layout_weight="1"/>
-
-
-                <Button
-                    style="@style/CardView"
-                    android:layout_width="48dp"
-                    android:layout_height="27dp"
-                    android:text="MÁS"
-                    android:id="@+id/btn_mas_blog"
-                    android:gravity="center"
-                    android:textSize="10dp"
-                    android:background="@drawable/layers_git_button_bg"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="15dp" />
-            </LinearLayout>
-
-
-            <TextView
-                android:id="@+id/tv_sub_blog"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Sigue tus blogs  fácilmente"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-        </LinearLayout>
-
-        <!--Linear para blog-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="7dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:paddingTop="7dp">
-
-
-            <Button
-                android:id="@+id/btn_blog_roll"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:background="@drawable/blog_roll"
-                android:textColor="#fffbfcf2"
-                android:textSize="16dp" />
-        </LinearLayout>
 
 
     </LinearLayout>

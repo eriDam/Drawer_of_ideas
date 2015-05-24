@@ -19,10 +19,10 @@ public class MainActivity extends ActionBarActivity {
     private CardView card_cpp_h, card_qt_h, card_android_h, card_test,
     card_music, card_notes;
     private Button
-            btn_profile, btn_profile2, btn_profile3,
+            btn_profile_go, btn_profile_tw, btn_profile_fc,btn_profile_git,
             btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog_roll,
-            btn_mas_lessons,btn_mas_prof,btn_mas_oncode,btn_mas_gest,btn_mas_blog,
-            btn_video_player, btn_youtube,            btn_git;
+            btn_mas_lessons,btn_mas_prof,btn_mas_oncode, btn_mas_blog,btn_miblog,
+            btn_youtube,btn_admin, btn_feedly;
 
     private static final String TAG = "Fragment HOME";
 
@@ -50,22 +50,24 @@ public class MainActivity extends ActionBarActivity {
         card_music      = (CardView) findViewById(R.id.card_music);
         card_notes      = (CardView) findViewById(R.id.card_notes);
 
-        btn_profile     = (Button) findViewById(R.id.btn_profile);
-        btn_profile2    = (Button) findViewById(R.id.btn_profile2);
-        btn_profile3    = (Button) findViewById(R.id.btn_profile3);
+        btn_profile_go     = (Button) findViewById(R.id.btn_profile_go);
+        btn_profile_tw = (Button) findViewById(R.id.btn_profile_tw);
+        btn_profile_fc = (Button) findViewById(R.id.btn_profile_fc);
+        btn_profile_git = (Button) findViewById(R.id.btn_profile_git);
         btn_oncode_git  = (Button) findViewById(R.id.btn_oncode_git);
         btn_oncode2      = (Button) findViewById(R.id.btn_oncode2);
-        btn_bd          = (Button) findViewById(R.id.btn_bd);
+        //btn_bd          = (Button) findViewById(R.id.btn_bd);
         btn_mas_lessons = (Button) findViewById(R.id.btn_mas_lessons);
         btn_mas_prof    = (Button) findViewById(R.id.btn_mas_prof);
-        btn_mas_gest    = (Button) findViewById(R.id.btn_mas_gest);
         btn_mas_blog    = (Button) findViewById(R.id.btn_mas_blog);
+        btn_miblog = (Button) findViewById(R.id.btn_miblog);
         btn_mas_oncode  = (Button) findViewById(R.id.btn_mas_oncode);
         btn_mas_test    = (Button) findViewById(R.id.btn_mas_test);
         btn_blog_roll   = (Button) findViewById(R.id.btn_blog_roll);
-        btn_video_player = (Button) findViewById(R.id.btn_video_player);
         btn_youtube      = (Button) findViewById(R.id.btn_youtube);
-        btn_git          = (Button) findViewById(R.id.btn_git);
+        btn_admin          = (Button) findViewById(R.id.btn_admin);
+        btn_feedly          = (Button) findViewById(R.id.btn_feedly);
+
 
         /*Eventos Lessons btn mas*/
         btn_mas_lessons.setOnClickListener(new Button.OnClickListener() {
@@ -125,8 +127,19 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intentoTest = new Intent(MainActivity.this,DevNotes.class);
-                startActivity(intentoTest);
+                Intent intentoDevNotes = new Intent(MainActivity.this,NotesFecha.class);
+                startActivity(intentoDevNotes);
+
+
+            }
+        });
+        card_music.setOnClickListener(new CardView.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //arrancar la siguiente activity
+                Intent intent = new Intent(MainActivity.this, Music_activity.class);
+                startActivity(intent);
 
 
             }
@@ -143,7 +156,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        btn_profile.setOnClickListener(new Button.OnClickListener() {
+        btn_profile_go.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -157,7 +170,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
         //Perfil Twiter abre en navegador
-        btn_profile2.setOnClickListener(new Button.OnClickListener() {
+        btn_profile_tw.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -168,11 +181,23 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         //Perfil Facebook abre en navegado, necesario usar la API para login, si no se viola el protocolo y no muestra
-        btn_profile3.setOnClickListener(new Button.OnClickListener() {
+        btn_profile_fc.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("https://facebook.com"));
+                startActivity(intento);
+
+//                Intent abreF = new Intent(MainActivity.this,WebProfFace.class);
+//                startActivity(abreF);
+
+            }
+        });
+        btn_profile_git.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/eriDam"));
                 startActivity(intento);
 
 //                Intent abreF = new Intent(MainActivity.this,WebProfFace.class);
@@ -213,17 +238,17 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        btn_bd.setOnClickListener(new Button.OnClickListener() {
-            //            @Override
-            public void onClick(View view) {
-//                //arrancar la siguiente activity
-//                Intent intent = new Intent(MainActivity.this,Gestion5Activity.class);
+//        btn_bd.setOnClickListener(new Button.OnClickListener() {
+//            //            @Override
+//            public void onClick(View view) {
+////                //arrancar la siguiente activity
+////                Intent intent = new Intent(MainActivity.this,Gestion5Activity.class);
+////                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this,Gestion5Lessons.class);
 //                startActivity(intent);
-                Intent intent = new Intent(MainActivity.this,Gestion5Lessons.class);
-                startActivity(intent);
-
-            }
-        });
+//
+//            }
+//        });
         btn_mas_test.setOnClickListener(new Button.OnClickListener() {
             //            @Override
             public void onClick(View view) {
@@ -234,12 +259,12 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        btn_mas_gest.setOnClickListener(new Button.OnClickListener() {
+        btn_miblog.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //arrancar la siguiente activity
-                Intent intent = new Intent(MainActivity.this, Gestion5Lessons.class);
+                Intent intent = new Intent(MainActivity.this, Blog6Activity.class);
                 startActivity(intent);
 
             }
@@ -256,24 +281,32 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
-        //Boton btn_blog_roll
+        //Boton btn_blog_roll es el de rss
         btn_blog_roll.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //arrancar la siguiente activity
-                Intent intent = new Intent(MainActivity.this, Blog6Activity.class);
-                startActivity(intent);
+                Intent abreRss = new Intent(MainActivity.this,NoticiasActivity.class);
+                startActivity(abreRss);
 
             }
         });
-        btn_video_player.setOnClickListener(new Button.OnClickListener() {
+        btn_admin.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //arrancar la siguiente activity
-                Intent intent = new Intent(MainActivity.this, Music_activity.class);
+                Intent intent = new Intent(MainActivity.this, AdminLessons.class);
                 startActivity(intent);
+
+            }
+        });
+        btn_feedly.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentoFeedly = new Intent(Intent.ACTION_VIEW, Uri.parse("https://feedly.com"));
+                startActivity(intentoFeedly);
 
             }
         });

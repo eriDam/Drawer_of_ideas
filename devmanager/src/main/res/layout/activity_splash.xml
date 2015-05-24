@@ -5,18 +5,19 @@
     android:orientation="vertical"
     android:background="#ff2b74e0">
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/imageView4"
-        android:background="@drawable/splash_dev"
         android:scaleType="centerCrop"
-        android:contentDescription="bg_onCode" />
+        android:contentDescription="bg_onCode"
+        android:background="@drawable/bg_large" />
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="196dp"
-        android:layout_gravity="center">
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="25dp">
 
         <ProgressBar
             style="?android:attr/progressBarStyleLarge"
@@ -40,6 +41,7 @@
             android:textColor="#ff8c9092"
             android:layout_weight="1"
             android:layout_marginTop="30dp" />
+
     </LinearLayout>
 
 </FrameLayout>

@@ -21,12 +21,12 @@ import java.io.OutputStreamWriter;
         private Button btnLeerRaw = null;
         private EditText et_nota;
         @Override
-    /*El método onCreate tiene por objetivo verificar si existe el archivo de texto,
+    /*El metodo onCreate tiene por objetivo verificar si existe el archivo de texto,
     proceder a su lectura y mostrar su contenido en el EditText.
     */
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_dev_notes);
 
             et_nota=(EditText)findViewById(R.id.et_nota);
 
@@ -38,24 +38,24 @@ import java.io.OutputStreamWriter;
 
                 try {
                     //En el caso que me retorne true procedemos a crear un objeto de la clase InputStreamReader y
-                    //al constructor de dicha clase le pasamos el dato devuelto por el método openFileInput:
+                    //al constructor de dicha clase le pasamos el dato devuelto por el metodo openFileInput:
                     InputStreamReader archivo = new InputStreamReader(
                             openFileInput("notas.txt"));
                     //Creamos un objeto de la clase BufferedReader y le pasamos al constructor
                     //la referencia del objeto de la clase InputStreamReader:
                     BufferedReader br = new BufferedReader(archivo);
-                    //Leemos la primer línea del archivo de texto:
+                    //Leemos la primer linea del archivo de texto:
                     String linea = br.readLine();
-                    // Inicializamos un String vacío:
+                    // Inicializamos un String vacio:
                     String todo = "";
-                    //  Mientras el método readLine de la clase BufferedReader devuelva un String:
+                    //  Mientras el metodo readLine de la clase BufferedReader devuelva un String:
                     while (linea != null) {
-                        // Lo concatenamos al String junto a un salto de línea:
+                        // Lo concatenamos al String junto a un salto de linea:
                         todo = todo + linea + "\n";
-                        // Leemos la próxima línea:
+                        // Leemos la proxima línea:
                         linea = br.readLine();
                     }
-                    // Llamamos al método close de la clase BufferedReader y al del InputStreamReader:
+                    // Llamamos al metodo close de la clase BufferedReader y al del InputStreamReader:
                     br.close();
                     archivo.close();
                     // Cargamos el EditText con el contenido del String que contiene todos los datos del archivo de texto:
@@ -100,7 +100,7 @@ import java.io.OutputStreamWriter;
         */
         public void grabar(View v) {
 
-        /*Todo esto está cerrado en un try/catch para verificar si sucede algún error en la apertura del archivo.*/
+        /*T esto está cerrado en un try/catch para verificar si sucede algún error en la apertura del archivo.*/
             try {
         /*Creamos un objeto de la clase OutputStreamWriter y al constructor de dicha
         clase le enviamos el dato que retorna el método openFileOutput propio de la clase
