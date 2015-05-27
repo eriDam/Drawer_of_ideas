@@ -12,6 +12,7 @@
      queremos esta accion si con icono en la actionBar o con tetxo en el overflow como entrada
      Tiene distintos valores: always, never, withText, ifRoom es el mas común, se muestra en
      la actionBar si se puede(normalmenete en horizontal caben ctrl+f11 en avd) -->
+
     <item
         android:id="@+id/menu_inicio"
         android:title="@string/inicio"
@@ -24,11 +25,10 @@
         android:icon="@drawable/ic_action_test"
         android:orderInCategory="40"
         app:showAsAction="ifRoom|withText"/>
-
     <item
         android:id="@+id/menu_lessons"
         android:title="@string/Lessons"
-        android:icon="@drawable/ic_action_star"
+        android:icon="@drawable/ic_lessons_white"
         android:orderInCategory="50"
         app:showAsAction="ifRoom|withText"/>
 
@@ -36,7 +36,7 @@
     <item
         android:id="@+id/menu_git"
         android:title="@string/code"
-        android:icon="@drawable/ic_github_min"
+        android:icon="@drawable/ic_git_minn"
         android:orderInCategory="70"
         app:showAsAction="ifRoom|withText"/>
 
@@ -44,7 +44,7 @@
     <item
         android:id="@+id/menu_gestion"
         android:title="Gestión"
-        android:icon="@drawable/ic_action_bdc"
+        android:icon="@drawable/ic_action_bd_white"
         android:orderInCategory="80"
         app:showAsAction="ifRoom|withText"/>
     <item
@@ -60,4 +60,3 @@
         android:title="@string/action_settings"
         app:showAsAction="ifRoom|withText"/>
 </menu>
-

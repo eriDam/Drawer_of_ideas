@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/btnGuardar"
                 android:layout_below="@+id/btnModificar"
-                android:onClick="buscarProducto"
+                android:onClick="verProductos"
                 android:text="Buscar"
                 android:layout_weight="1" />
 

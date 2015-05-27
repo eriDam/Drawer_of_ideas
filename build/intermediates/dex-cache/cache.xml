@@ -2,11 +2,39 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-2675c5900d1e0e5cb14016e8cc10be3b11188938.jar" />
+    </item>
+    <item
         jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.9.0\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f2b8a750df2a5d485d0c40b379b44371c5e6d98d">
         <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-c5aba4d9bbac99098fdfddb2d82df1b2e142b689.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.1.0\support-annotations-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\support-annotations-22.1.0-6095855da9cb343824b8344154f7b4e8b6232607.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\classes-56842c1695bb85080189aa14313c906430e64924.jar" />
+    </item>
+    <item
+        jar="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\classes-5767feb26c22bc5411d154d4826ac557376de5fd.jar" />
     </item>
     <item
         jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
@@ -23,13 +51,6 @@
         <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-ff7f7f3c4dc6206c23ad453e6341695a2fe95661.jar" />
     </item>
     <item
-        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.1.0\support-annotations-22.1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
-        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\support-annotations-22.1.0-6095855da9cb343824b8344154f7b4e8b6232607.jar" />
-    </item>
-    <item
         jar="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.0\libs\internal_impl-22.1.0.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -42,6 +63,13 @@
         revision="22.0.1"
         sha1="983e2f375504bc04def18e709c35192afe92e65f">
         <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\devmanager\build\intermediates\pre-dexed\debug\classes-a914c44cfac8b4f7facd8d87a5afa3fa80f4ebac.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdks\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\erika_000\AndroidStudioProjects\Follow\almacen\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-4948072e007f8dd2314e9220bf93884a1be71dcc.jar" />
     </item>
 
 </items>

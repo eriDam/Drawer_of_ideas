@@ -17,12 +17,12 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
     //Botones
     private CardView card_cpp_h, card_qt_h, card_android_h, card_test,
-    card_music, card_notes;
+            card_music, card_notes, card_db, card_blog, card_rss, card_feedly;
     private Button
-            btn_profile_go, btn_profile_tw, btn_profile_fc,btn_profile_git,
-            btn_oncode_git, btn_oncode2,btn_bd, btn_mas_test, btn_blog_roll,
-            btn_mas_lessons,btn_mas_prof,btn_mas_oncode, btn_mas_blog,btn_miblog,
-            btn_youtube,btn_admin, btn_feedly;
+            btn_profile_go, btn_profile_tw, btn_profile_fc, btn_profile_git,
+            btn_oncode_git, btn_oncode2, btn_bd, btn_mas_test, btn_blog_roll,
+            btn_mas_lessons, btn_mas_prof, btn_mas_oncode, btn_mas_blog, btn_miblog,
+            btn_youtube, btn_stack;
 
     private static final String TAG = "Fragment HOME";
 
@@ -40,33 +40,34 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-//Metodo para recuperar los controles mediante su id, para descargar el onCreate
+    //Metodo para recuperar los controles mediante su id, para descargar el onCreate
     private void iniciarControles() {
         //Obtnego los controls mediante su id
-        card_cpp_h      = (CardView) findViewById(R.id.card_cpp_h);
-        card_qt_h       = (CardView) findViewById(R.id.card_qt_h);
-        card_android_h  = (CardView) findViewById(R.id.card_android_h);
-        card_test       = (CardView) findViewById(R.id.card_test);
-        card_music      = (CardView) findViewById(R.id.card_music);
-        card_notes      = (CardView) findViewById(R.id.card_notes);
+        card_cpp_h = (CardView) findViewById(R.id.card_cpp_h);
+        card_qt_h = (CardView) findViewById(R.id.card_qt_h);
+        card_android_h = (CardView) findViewById(R.id.card_android_h);
+        card_test = (CardView) findViewById(R.id.card_test);
+        card_music = (CardView) findViewById(R.id.card_music);
+        card_notes = (CardView) findViewById(R.id.card_notes);
+        card_db = (CardView) findViewById(R.id.card_db);
+        card_rss = (CardView) findViewById(R.id.card_rss);
+        card_blog = (CardView) findViewById(R.id.card_blog);
+        card_feedly = (CardView) findViewById(R.id.card_feedly);
 
-        btn_profile_go     = (Button) findViewById(R.id.btn_profile_go);
+
+        btn_profile_go = (Button) findViewById(R.id.btn_profile_go);
         btn_profile_tw = (Button) findViewById(R.id.btn_profile_tw);
         btn_profile_fc = (Button) findViewById(R.id.btn_profile_fc);
         btn_profile_git = (Button) findViewById(R.id.btn_profile_git);
-        btn_oncode_git  = (Button) findViewById(R.id.btn_oncode_git);
-        btn_oncode2      = (Button) findViewById(R.id.btn_oncode2);
-        //btn_bd          = (Button) findViewById(R.id.btn_bd);
+        btn_oncode_git = (Button) findViewById(R.id.btn_oncode_git);
+        btn_oncode2 = (Button) findViewById(R.id.btn_oncode2);
         btn_mas_lessons = (Button) findViewById(R.id.btn_mas_lessons);
-        btn_mas_prof    = (Button) findViewById(R.id.btn_mas_prof);
-        btn_mas_blog    = (Button) findViewById(R.id.btn_mas_blog);
-        btn_miblog = (Button) findViewById(R.id.btn_miblog);
-        btn_mas_oncode  = (Button) findViewById(R.id.btn_mas_oncode);
-        btn_mas_test    = (Button) findViewById(R.id.btn_mas_test);
-        btn_blog_roll   = (Button) findViewById(R.id.btn_blog_roll);
-        btn_youtube      = (Button) findViewById(R.id.btn_youtube);
-        btn_admin          = (Button) findViewById(R.id.btn_admin);
-        btn_feedly          = (Button) findViewById(R.id.btn_feedly);
+        btn_mas_prof = (Button) findViewById(R.id.btn_mas_prof);
+        btn_mas_blog = (Button) findViewById(R.id.btn_mas_blog);
+        btn_mas_oncode = (Button) findViewById(R.id.btn_mas_oncode);
+        btn_mas_test = (Button) findViewById(R.id.btn_mas_test);
+        btn_youtube = (Button) findViewById(R.id.btn_youtube);
+        btn_stack = (Button) findViewById(R.id.btn_stack);
 
 
         /*Eventos Lessons btn mas*/
@@ -83,7 +84,7 @@ public class MainActivity extends ActionBarActivity {
         card_cpp_h.setOnClickListener(new CardView.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abreLessons = new Intent(MainActivity.this,WebLessonsCpp.class);
+                Intent abreLessons = new Intent(MainActivity.this, WebLessonsCpp.class);
                 startActivity(abreLessons);
 
 //                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://es.cppreference.com/w/"));
@@ -95,7 +96,7 @@ public class MainActivity extends ActionBarActivity {
         card_qt_h.setOnClickListener(new CardView.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent abreLessonsQt = new Intent(MainActivity.this,WebLessonsQt.class);
+                Intent abreLessonsQt = new Intent(MainActivity.this, WebLessonsQt.class);
                 startActivity(abreLessonsQt);
             }
         });
@@ -105,7 +106,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent abreLessonsAndroid = new Intent(MainActivity.this,WebLessonsAndroid.class);
+                Intent abreLessonsAndroid = new Intent(MainActivity.this, WebLessonsAndroid.class);
                 startActivity(abreLessonsAndroid);
 //                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com/"));
 //                startActivity(intento);
@@ -117,7 +118,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intentoTest = new Intent(MainActivity.this,DevTest.class);
+                Intent intentoTest = new Intent(MainActivity.this, DevTest.class);
                 startActivity(intentoTest);
 
 
@@ -127,7 +128,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intentoDevNotes = new Intent(MainActivity.this,NotesFecha.class);
+                Intent intentoDevNotes = new Intent(MainActivity.this, NotesFecha.class);
                 startActivity(intentoDevNotes);
 
 
@@ -221,7 +222,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View view) {
 
                 //Abre activity webView
-                Intent abreGit = new Intent(MainActivity.this,WebGit.class);
+                Intent abreGit = new Intent(MainActivity.this, WebGit.class);
                 startActivity(abreGit);
 
 
@@ -253,13 +254,14 @@ public class MainActivity extends ActionBarActivity {
             //            @Override
             public void onClick(View view) {
                 //arrancar la siguiente activity Test
-                Intent intent = new Intent(MainActivity.this,DevTest.class);
+                Intent intent = new Intent(MainActivity.this, DevTest.class);
                 startActivity(intent);
 
             }
         });
 
-        btn_miblog.setOnClickListener(new Button.OnClickListener() {
+        //CardView Blog ecabDam
+        card_blog.setOnClickListener(new CardView.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -282,16 +284,16 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         //Boton btn_blog_roll es el de rss
-        btn_blog_roll.setOnClickListener(new Button.OnClickListener() {
+        card_rss.setOnClickListener(new CardView.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent abreRss = new Intent(MainActivity.this,NoticiasActivity.class);
+                Intent abreRss = new Intent(MainActivity.this, NoticiasActivity.class);
                 startActivity(abreRss);
 
             }
         });
-        btn_admin.setOnClickListener(new Button.OnClickListener() {
+        card_db.setOnClickListener(new CardView.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -301,7 +303,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
-        btn_feedly.setOnClickListener(new Button.OnClickListener() {
+        card_feedly.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -320,6 +322,16 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
+        btn_stack.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intento = new Intent(Intent.ACTION_VIEW, Uri.parse("http://stackoverflow.com/"));
+                startActivity(intento);
+            }
+        });
         Log.i(TAG, getClass().getSimpleName() + ":entered Controles iniciados");
     }
 
@@ -330,8 +342,10 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    /**Cuando seleccionemos un item del menu, mostrará un mensaje, dependiendo del id que me devuelva line 28,
-     * van a haber muchos case*/
+    /**
+     * Cuando seleccionemos un item del menu, mostrará un mensaje, dependiendo del id que me devuelva line 28,
+     * van a haber muchos case
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -362,7 +376,7 @@ public class MainActivity extends ActionBarActivity {
                 return true;
             case R.id.menu_git: /**Este Id  hace referencia al id del item del menu, en este caso buscar*/
                 Toast.makeText(getApplicationContext(), "ONCODE", Toast.LENGTH_SHORT).show();
-                  //arrancar la siguiente activity
+                //arrancar la siguiente activity
                 Intent abreGit;
                 abreGit = new Intent(MainActivity.this, OnCode4Activity.class);
                 startActivity(abreGit);
@@ -372,7 +386,7 @@ public class MainActivity extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
                 //arrancar la siguiente activity
                 Intent abreGestion;
-                abreGestion = new Intent(MainActivity.this, Gestion5Lessons.class);
+                abreGestion = new Intent(MainActivity.this, AdminLessons.class);
                 startActivity(abreGestion);
 
                 return true;
@@ -388,9 +402,9 @@ public class MainActivity extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), "SETTINGS", Toast.LENGTH_SHORT).show();
                 //TODO crear opciones de personalización
 //                //arrancar la siguiente activity
-//                Intent abreBlog;
-//                abreBlog= new Intent(MainActivity.this, Blog6Activity.class);
-//                startActivity(abreBlog);
+                Intent abreGestionOld;
+                abreGestionOld = new Intent(MainActivity.this, Gestion5Lessons.class);
+                startActivity(abreGestionOld);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

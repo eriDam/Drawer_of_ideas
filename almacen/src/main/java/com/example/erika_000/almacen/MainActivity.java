@@ -3,9 +3,11 @@ package com.example.erika_000.almacen;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,7 +24,7 @@ import com.example.erika_000.almacen.EstructuraDatos.Estructura;
 
 public class MainActivity extends Activity {
 	ProgressDialog dialog;
-	//Declaramos los controles necesarios para la logica de la aplicaciÛn
+	//Declaramos los controles necesarios para la logica de la aplicaci√≥n
 	private EditText edProducto;
 	private EditText edCantidad;
 	private EditText edId;
@@ -53,7 +55,7 @@ public class MainActivity extends Activity {
     {
     	//Se inicializa la clase.
     	basedatos = new MiBaseDatos(this);
-    	//Clase que permite llamar a los mÈtodos para crear, eliminar, leer y actualizar registros. Se establecen permisos de escritura.
+    	//Clase que permite llamar a los m√©todos para crear, eliminar, leer y actualizar registros. Se establecen permisos de escritura.
     	SQLiteDatabase sqlite = basedatos.getWritableDatabase();
     	String producto = edProducto.getText().toString();
     	String cantidad = edCantidad.getText().toString();
@@ -66,7 +68,7 @@ public class MainActivity extends Activity {
     		Toast.makeText(this, "Revise los datos introducidos. Todos los campos son obligatorios.",Toast.LENGTH_SHORT).show();
     	}else
     	{
-    		//Se aÒaden los valores introducidos de cada campo mediante clave(columna)/valor(valor introducido en el campo de texto)
+    		//Se a√±aden los valores introducidos de cada campo mediante clave(columna)/valor(valor introducido en el campo de texto)
 	    	content.put(Estructura.COLUMN_NAME_TITLE,producto);
 	    	content.put(Estructura.COLUMN_NAME_CANTIDAD, cantidad);
 	    	content.put(Estructura.COLUMN_NAME_SECCION, seccion);
@@ -76,7 +78,7 @@ public class MainActivity extends Activity {
 	    	edCantidad.setText("");
 	    	edId.setText("");
     	}
-    	//Se cierra la conexiÛn abierta a la Base de Datos
+    	//Se cierra la conexi√≥n abierta a la Base de Datos
     	sqlite.close();
     }
     
@@ -87,7 +89,7 @@ public class MainActivity extends Activity {
     	basedatos = new MiBaseDatos(this);
     	//Se establecen permisos de lectura
     	SQLiteDatabase sqlite = basedatos.getReadableDatabase();
-    	//Columnas que devolver· la consulta.
+    	//Columnas que devolver√° la consulta.
     	String[] columnas = {
     		    Estructura._ID,
     		    Estructura.COLUMN_NAME_TITLE,
@@ -95,9 +97,9 @@ public class MainActivity extends Activity {
     		    Estructura.COLUMN_NAME_SECCION
     		    };
     	
-    	//Cl·usula WHERE para buscar por producto
+    	//Cl√°usula WHERE para buscar por producto
     	String producto = Estructura.COLUMN_NAME_TITLE + " LIKE '" +  edProducto.getText().toString() + "'";
-    	//Orden de los resultados devueltos por Producto, de forma Descendente alfabÈticamente
+    	//Orden de los resultados devueltos por Producto, de forma Descendente alfab√©ticamente
     	String ordenSalida = Estructura.COLUMN_NAME_TITLE + " DESC";
     	
     	if(producto.equals(""))    		
@@ -105,7 +107,7 @@ public class MainActivity extends Activity {
     		Toast.makeText(this, "Debe indicar el curso a buscar en la base de datos.",Toast.LENGTH_SHORT).show();
     	}else
     	{
-    		//Ejecuta la sentencia devolviendo los resultados de los par·metros pasados de tabla, columnas, producto y orden de los resultados.
+    		//Ejecuta la sentencia devolviendo los resultados de los par√°metros pasados de tabla, columnas, producto y orden de los resultados.
     		Cursor cursor = sqlite.query(Estructura.TABLE_NAME, columnas, producto,null , null, null, ordenSalida);
 	    		
 	    	if(cursor.getCount() != 0)
@@ -114,9 +116,10 @@ public class MainActivity extends Activity {
 	    		
 			    	long identificador = cursor.getLong(cursor.getColumnIndex(Estructura._ID));
 			    	Toast.makeText(this, "El curso " +  edProducto.getText().toString()
-			    			 + " est· almacenado con Identificador " + identificador, Toast.LENGTH_SHORT).show();
-				    textView_resultado.setText("El curso " +  edProducto.getText().toString()
-							+ " est· almacenado con Identificador " + identificador);
+			    			 + " est√° almacenado con Identificador " + identificador, Toast.LENGTH_SHORT).show();
+
+                textView_resultado.setText("El curso " +  edProducto.getText().toString()
+							+ " est√° almacenado con Identificador " + identificador);
 			    	edProducto.setText("");
 			    	edCantidad.setText("");
 			    	edId.setText("");
@@ -128,7 +131,7 @@ public class MainActivity extends Activity {
 	    	}
 	    	
     	}
-    	//Se cierra la conexiÛn abierta a la Base de Datos
+    	//Se cierra la conexi√≥n abierta a la Base de Datos
     	sqlite.close();
 
     }
@@ -139,7 +142,7 @@ public class MainActivity extends Activity {
 		basedatos = new MiBaseDatos(this);
 		//Se establecen permisos de lectura
 		SQLiteDatabase sqlite = basedatos.getReadableDatabase();
-		//Columnas que devolver· la consulta.
+		//Columnas que devolver√° la consulta.
 		String[] columnas = {
 				Estructura._ID,
 				Estructura.COLUMN_NAME_TITLE,
@@ -147,9 +150,9 @@ public class MainActivity extends Activity {
 				Estructura.COLUMN_NAME_SECCION
 		};
 
-		//Cl·usula WHERE para buscar por producto
+		//Cl√°usula WHERE para buscar por curso
 		String producto = Estructura.COLUMN_NAME_TITLE + " = '" +  edProducto.getText().toString() + "'";
-		//Orden de los resultados devueltos por Producto, de forma Descendente alfabÈticamente
+		//Orden de los resultados devueltos por Producto, de forma Descendente alfab√©ticamente
 		String ordenSalida = Estructura.COLUMN_NAME_TITLE + " DESC";
 
 		if(producto.equals(""))
@@ -157,27 +160,34 @@ public class MainActivity extends Activity {
 			Toast.makeText(this, "Debe indicar el curso a buscar en la base de datos.",Toast.LENGTH_SHORT).show();
 		}else
 		{
-			//Ejecuta la sentencia devolviendo los resultados de los par·metros pasados de tabla, columnas, producto y orden de los resultados.
+			//Ejecuta la sentencia devolviendo los resultados de los par√°metros pasados de tabla, columnas, producto y orden de los resultados.
 			Cursor cursor = sqlite.query(Estructura.TABLE_NAME, columnas, producto,null , null, null, ordenSalida);
 
 			if(cursor.getCount() != 0)
 			{
 				cursor.moveToFirst();
 
-				long identificador = cursor.getLong(cursor.getColumnIndex(Estructura._ID));
-				//Para mostrar
-				dialog = new ProgressDialog(MainActivity.this);
-				dialog.setTitle("Mostrar Registros");
-				dialog.setMessage("El curso " + edProducto.getText().toString()
-						+ " est· almacenado con Identificador " + identificador);
-				dialog.show();
+     			long identificador = cursor.getLong(cursor.getColumnIndex(Estructura._ID));
+//				//Para mostrar
+//				dialog = new ProgressDialog(MainActivity.this);
+//				dialog.setTitle("Mostrar Registros");
+//				dialog.setMessage("El curso " + edProducto.getText().toString()
+//						+ " est√° almacenado con Identificador " + identificador);
+//				dialog.show();
 
+				//Creo un string para almacenar el resultado
+				String resultado = ("El curso " + edProducto.getText().toString()
+						+ " est√° almacenado con Identificador " + identificador +" en la secci√≥n "+ spnSeccion.getSelectedItem().toString());
 
+				//Utilizo la funci√≥n para mostrar resultados en base a la eleccion del user de si quiere continuar o no
+				eleccionResultados(resultado);
+
+				//Pongo el resultado tambien en un text
 				textView_resultado.setText("El curso " + edProducto.getText().toString()
-						+ " est· almacenado con Identificador " + identificador);
+						+ " est√° almacenado con Identificador " + identificador);
 //
 //               Toast.makeText(this, "El curso " +  edProducto.getText().toString()
-//						+ " est· almacenado con Identificador " + identificador, Toast.LENGTH_SHORT).show();
+//						+ " est√° almacenado con Identificador " + identificador, Toast.LENGTH_SHORT).show();
 //
 				edProducto.setText("");
 				edCantidad.setText("");
@@ -190,12 +200,43 @@ public class MainActivity extends Activity {
 			}
 
 		}
-		//Se cierra la conexiÛn abierta a la Base de Datos
+		//Se cierra la conexi√≥n abierta a la Base de Datos
 		sqlite.close();
 
 	}
+	/**
+	 * Mensaje en pantalla que desaparece tras pulsar alguna de sus opciones
+	 *
+	 */
+	public void eleccionResultados(String cadena){
+		//se prepara la alerta creando nueva instancia
+		final AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+		//seleccionamos la cadena a mostrar
+		alertbox.setTitle("Resultados");
+		alertbox.setMessage(cadena);
+		//elegimos un positivo SI y creamos un Listener
+		alertbox.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
+			//Funcion llamada cuando se pulsa el boton Siguiente
+			public void onClick(DialogInterface arg0, int arg1) {
+				mensaje("Siguiente");
+			}
+		});
 
+		//elegimos un positivo Salir y creamos un Listener
+		alertbox.setNegativeButton("Salir", new DialogInterface.OnClickListener() {
+			//Funcion llamada cuando se pulsa el boton Salir
+			public void onClick(DialogInterface arg0, int arg1) {
 
+				mensaje("Pulsado el bot√≥n Salir");
+			}
+		});
+
+		//mostramos el alertbox
+		alertbox.show();
+	}
+	public void mensaje(String cadena){
+		Toast.makeText(this, cadena, Toast.LENGTH_SHORT).show();
+	}
 	//Evento On Click para eliminar un producto de la tabla Ventas por el nombre
     public void borrarProducto(View view)
     {
@@ -220,7 +261,7 @@ public class MainActivity extends Activity {
 	    	edId.setText("");
 	    	
     	}
-    	//Se cierra la conexiÛn abierta a la Base de Datos
+    	//Se cierra la conexi√≥n abierta a la Base de Datos
     	sqlite.close();
     }
     
@@ -239,7 +280,7 @@ public class MainActivity extends Activity {
     	String seccion_modificar = spnSeccion.getSelectedItem().toString();
     	
     	ContentValues content = new ContentValues();
-    	//Se aÒaden los valores introducidos de cada campo mediante clave(columna)/valor(valor introducido en el campo de texto)
+    	//Se a√±aden los valores introducidos de cada campo mediante clave(columna)/valor(valor introducido en el campo de texto)
     	content.put(Estructura.COLUMN_NAME_TITLE, producto_modificar);
     	content.put(Estructura.COLUMN_NAME_CANTIDAD, cantidad_modificar);
     	content.put(Estructura.COLUMN_NAME_SECCION, seccion_modificar);
@@ -248,10 +289,10 @@ public class MainActivity extends Activity {
     		Toast.makeText(this, "Revise los datos introducidos. Todos los campos son obligatorios.", Toast.LENGTH_SHORT).show();
     	}else
     	{
-    		//Se establece la condiciÛn del _id del producto a modificar
+    		//Se establece la condici√≥n del _id del curso a modificar
     		String selection = Estructura._ID + " LIKE " + identificador;
     		
-    		//Se llama al mÈtodo update pas·ndole los par·metros para modificar el producto con el identificado como condiciÛn de busqueda
+    		//Se llama al m√©todo update pas√°ndole los par√°metros para modificar el curso con el identificado como condici√≥n de busqueda
     		int count = sqlite.update(
 	    	    Estructura.TABLE_NAME,
 	    	    content,
@@ -263,7 +304,7 @@ public class MainActivity extends Activity {
 	    	edCantidad.setText("");
 	    	edId.setText("");
     	}
-    	//Se cierra la conexiÛn abierta a la Base de Datos
+    	//Se cierra la conexi√≥n abierta a la Base de Datos
     	sqlite.close();
     }
 

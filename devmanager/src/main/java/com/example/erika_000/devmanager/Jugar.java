@@ -111,7 +111,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_formulario, menu);
         return true;
     }
 
@@ -127,6 +127,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abre;
                 abre = new Intent(Jugar.this, MainActivity.class);
                 startActivity(abre);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_devtest:
                 Toast.makeText(getApplicationContext(), "DEVTEST", Toast.LENGTH_SHORT).show();
@@ -134,6 +135,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreDev;
                 abreDev = new Intent(Jugar.this, DevTest.class);
                 startActivity(abreDev);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_lessons:
                 Toast.makeText(getApplicationContext(), "LESSONS", Toast.LENGTH_SHORT).show();
@@ -141,6 +143,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreLessons;
                 abreLessons = new Intent(Jugar.this, Lessons2Activity.class);
                 startActivity(abreLessons);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_profile:
                 Toast.makeText(getApplicationContext(), "PERFILES", Toast.LENGTH_SHORT).show();
@@ -148,6 +151,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreProf;
                 abreProf = new Intent(Jugar.this, Prof3Activity.class);
                 startActivity(abreProf);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_git: /**Este Id  hace referencia al id del item del menu, en este caso buscar*/
                 Toast.makeText(getApplicationContext(), "ONCODE", Toast.LENGTH_SHORT).show();
@@ -155,6 +159,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreGit;
                 abreGit = new Intent(Jugar.this, OnCode4Activity.class);
                 startActivity(abreGit);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_gestion:
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
@@ -162,6 +167,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreGestion;
                 abreGestion = new Intent(Jugar.this, Gestion5Activity.class);
                 startActivity(abreGestion);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.menu_blog:
                 Toast.makeText(getApplicationContext(), "GESTIÓN", Toast.LENGTH_SHORT).show();
@@ -169,6 +175,7 @@ public class Jugar extends ActionBarActivity implements View.OnClickListener{
                 Intent abreBlog;
                 abreBlog = new Intent(Jugar.this, Blog6Activity.class);
                 startActivity(abreBlog);
+                finish();//finalizo activity para liberar memoria
                 return true;
             case R.id.action_settings:
                 Toast.makeText(getApplicationContext(), "SETTINGS", Toast.LENGTH_SHORT).show();

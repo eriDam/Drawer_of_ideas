@@ -1,6 +1,7 @@
 package com.example.erika_000.devmanager;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,7 +34,7 @@ import java.io.OutputStreamWriter;
             //Primero obtenemos la lista de todos los archivos creados por
             //la Activity. En nuestra app puede ser cero o uno:
             String[] archivos = fileList();
-            //Llamamos a un mÈtodo que verifica si en el vector de tipo String existe el archivo "notas.txt":
+            //Llamamos a un m√©todo que verifica si en el vector de tipo String existe el archivo "notas.txt":
             if (existe(archivos, "notas.txt"))
 
                 try {
@@ -52,7 +53,7 @@ import java.io.OutputStreamWriter;
                     while (linea != null) {
                         // Lo concatenamos al String junto a un salto de linea:
                         todo = todo + linea + "\n";
-                        // Leemos la proxima lÌnea:
+                        // Leemos la proxima l√≠nea:
                         linea = br.readLine();
                     }
                     // Llamamos al metodo close de la clase BufferedReader y al del InputStreamReader:
@@ -68,25 +69,82 @@ import java.io.OutputStreamWriter;
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
             // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_main, menu);
+            getMenuInflater().inflate(R.menu.menu_dev_notes, menu);
             return true;
         }
 
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
-            // Handle action bar item clicks here. The action bar will
-            // automatically handle clicks on the Home/Up button, so long
-            // as you specify a parent activity in AndroidManifest.xml.
-            int id = item.getItemId();
+            {
+                switch (item.getItemId()) {
+                    case R.id.menu_inicio:
+                        Toast.makeText(getApplicationContext(), "INICIO", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abre;
+                        abre = new Intent(DevNotes.this, MainActivity.class);
+                        startActivity(abre);
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+                    case R.id.menu_devtest:
+                        Toast.makeText(getApplicationContext(), "DEVTEST", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abreDev;
+                        abreDev = new Intent(DevNotes.this, DevTest.class);
+                        startActivity(abreDev);
 
-            //noinspection SimplifiableIfStatement
-            if (id == R.id.action_settings) {
-                return true;
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+                    case R.id.menu_lessons:
+                        Toast.makeText(getApplicationContext(), "LESSONS", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abreLessons;
+                        abreLessons = new Intent(DevNotes.this, Lessons2Activity.class);
+                        startActivity(abreLessons);
+
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+                    case R.id.menu_profile:
+                        Toast.makeText(getApplicationContext(), "PERFILES", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abreProf;
+                        abreProf = new Intent(DevNotes.this, Prof3Activity.class);
+                        startActivity(abreProf);
+
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+                    case R.id.menu_git: /**Este Id  hace referencia al id del item del menu, en este caso buscar*/
+                        Toast.makeText(getApplicationContext(), "ONCODE", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abreGit;
+                        abreGit = new Intent(DevNotes.this, OnCode4Activity.class);
+                        startActivity(abreGit);
+
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+
+                    case R.id.menu_blog:
+                        Toast.makeText(getApplicationContext(), "BLOG", Toast.LENGTH_SHORT).show();
+                        //arrancar la siguiente activity
+                        Intent abreBlog;
+                        abreBlog = new Intent(DevNotes.this, Blog6Activity.class);
+                        startActivity(abreBlog);
+
+                        finish();//finalizo activity para liberar memoria
+                        return true;
+                    case R.id.action_settings:
+                        Toast.makeText(getApplicationContext(), "SETTINGS", Toast.LENGTH_SHORT).show();
+                        //TODO crear opciones de personalizaci√≥n
+//                //arrancar la siguiente activity
+                        Intent abreGestionOld;
+                        abreGestionOld = new Intent(DevNotes.this, Gestion5Lessons.class);
+                        startActivity(abreGestionOld);
+                        return true;
+                    default:
+                        return super.onOptionsItemSelected(item);
+                }
             }
-
-            return super.onOptionsItemSelected(item);
         }
-        /*El mÈtodo existe llega un vector de tipo String y otro String a buscar.
+        /*El m√©todo existe llega un vector de tipo String y otro String a buscar.
         Dentro de un for verificamos el String a buscar con cada uno de los String del vector,
         si lo encontramos retornamos true. Si recorre todo el for sin encontrarlo fuera del for retornamos false:*/
         private boolean existe(String[] archivos, String archbusca) {
@@ -95,23 +153,23 @@ import java.io.OutputStreamWriter;
                     return true;
             return false;
         }
-        /*en el mÈtodo grabar que se ejecuta cuando presionamos el botÛn "grabar"
-         (recordar inicializar la propiedad "onClick" del botÛn con el valor "grabar"):
+        /*en el m√©todo grabar que se ejecuta cuando presionamos el bot√≥n "grabar"
+         (recordar inicializar la propiedad "onClick" del bot√≥n con el valor "grabar"):
         */
         public void grabar(View v) {
 
-        /*T esto est· cerrado en un try/catch para verificar si sucede alg˙n error en la apertura del archivo.*/
+        /*T esto est√° cerrado en un try/catch para verificar si sucede alg√∫n error en la apertura del archivo.*/
             try {
         /*Creamos un objeto de la clase OutputStreamWriter y al constructor de dicha
-        clase le enviamos el dato que retorna el mÈtodo openFileOutput propio de la clase
-        ActionBarActivity que le pasamos como par·metro el nombre del archivo de texto y el modo de apertura.
+        clase le enviamos el dato que retorna el m√©todo openFileOutput propio de la clase
+        ActionBarActivity que le pasamos como par√°metro el nombre del archivo de texto y el modo de apertura.
         */
                 OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput(
                         "notas.txt", Activity.MODE_PRIVATE));
-                //Seguidamente si el archivo se creÛ correctamente procedemos a llamar al mÈtodo write y le pasamos
+                //Seguidamente si el archivo se cre√≥ correctamente procedemos a llamar al m√©todo write y le pasamos
                 //el String a grabar, en este caso extraemos los datos del EditText:
                 archivo.write(et_nota.getText().toString());
-            /*con el mÈtodo write llamamos al mÈtodo flush para que vuelque todos los
+            /*con el m√©todo write llamamos al m√©todo flush para que vuelque todos los
             datos que pueden haber quedado en el buffer y procedemos al cerrado del archivo:*/
                 archivo.flush();
                 archivo.close();
